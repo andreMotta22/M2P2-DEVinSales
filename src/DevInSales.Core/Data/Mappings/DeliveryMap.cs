@@ -14,7 +14,7 @@ namespace DevInSales.Core.Data.Mappings
             builder.HasKey(p => p.Id);
 
             builder.Property(p => p.DeliveryForecast)
-                .HasColumnType("timestamptz");
+                .HasColumnType("timestamp");
 
             builder.HasOne(p => p.Sale)
                 .WithMany()

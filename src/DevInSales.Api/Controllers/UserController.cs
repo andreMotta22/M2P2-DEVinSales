@@ -104,23 +104,24 @@ namespace DevInSales.Api.Controllers
         [HttpPost]
         public ActionResult CriarUser(AddUser model)
         {
-            var user = new User(model.Email, model.Password, model.Name, model.BirthDate);
+            // var user = new User(model.Email, model.Password, model.Name, model.BirthDate);
 
-            var verifyEmail = new EmailValidate();
+            // var verifyEmail = new EmailValidate();
 
-            if (!verifyEmail.IsValidEmail(user.Email))
-                return BadRequest("Email inválido");
+            // if (!verifyEmail.IsValidEmail(user.Email))
+            //     return BadRequest("Email inválido");
 
-            if (user.BirthDate.AddYears(18) > DateTime.Now)
-                return BadRequest("Usuário não tem idade suficiente");
+            // if (user.BirthDate.AddYears(18) > DateTime.Now)
+            //     return BadRequest("Usuário não tem idade suficiente");
 
-            if (user.Password.Length < 4 || user.Password.Length == 0 || user.Password.All(ch => ch == user.Password[0]))
-                return BadRequest("Senha inválida, deve conter pelo menos 4 caracteres e deve conter ao menos um caracter diferente");
+            // if (user.Password.Length < 4 || user.Password.Length == 0 || user.Password.All(ch => ch == user.Password[0]))
+            //     return BadRequest("Senha inválida, deve conter pelo menos 4 caracteres e deve conter ao menos um caracter diferente");
 
 
-            var id = _userService.CriarUser(user);
+            // var id = _userService.CriarUser(user);
 
-            return CreatedAtAction(nameof(ObterUserPorId), new { id = id }, id);
+            // return CreatedAtAction(nameof(ObterUserPorId), new { id = id }, id);
+            return Ok();
         }
 
         /// <summary>

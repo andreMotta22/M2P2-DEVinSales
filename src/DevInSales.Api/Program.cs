@@ -3,7 +3,8 @@ using DevInSales.Core.Data.Context;
 using DevInSales.Core.Entities;
 using DevInSales.Core.Interfaces;
 using DevInSales.Core.Services;
-
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +16,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddIocIdentity(builder.Configuration);
+
 builder.Services.AddScoped<ISaleService, SaleService>();
 builder.Services.AddScoped<IDeliveryService, DeliveryService>();
 builder.Services.AddScoped<ISaleProductService, SaleProductService>();
@@ -23,7 +26,7 @@ builder.Services.AddScoped<ICityService, CityService>();
 builder.Services.AddScoped<IAddressService, AddressService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 
-builder.Services.AddIocIdentity(builder.Configuration);
+
 
 // builder.Services.AddScoped<IUserService, UserService>();
 

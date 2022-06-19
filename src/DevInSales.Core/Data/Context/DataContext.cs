@@ -8,11 +8,12 @@ namespace DevInSales.Core.Data.Context
 {
     public class DataContext : IdentityDbContext<User,IdentityRole<int>,int>
     {
-        public DataContext(DbContextOptions<IdentityDbContext> options) : base(options) { }
+        public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            base.OnModelCreating(modelBuilder);
         }
 
         // public DbSet<User> Users { get; set; }
