@@ -9,9 +9,10 @@ namespace DevInSales.Api.Ioc.IdentityInjection
     {
         public static IServiceCollection AddIocIdentity(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<DataContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("SqlServerConnection"))
-            );
+            services.AddDbContext<DataContext>(options => {
+                options.UseSqlServer(configuration.GetConnectionString("SqlServerConnection"));
+                options.EnableSensitiveDataLogging(true);
+            });
             services.AddDefaultIdentity<User>()
                     .AddEntityFrameworkStores<DataContext>()
                     .AddDefaultTokenProviders();

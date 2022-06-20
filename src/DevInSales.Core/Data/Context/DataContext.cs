@@ -6,14 +6,23 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DevInSales.Core.Data.Context
 {
-    public class DataContext : IdentityDbContext<User,IdentityRole<int>,int>
+    public class DataContext : IdentityDbContext<User,ApplicationRole,int>
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            /*
+                Ao fazermos o mapeamento em arquivos separados, acabamos por dar um override no 
+                OnModelCreating do identity o que é um tanto irritante do identity que tornar 
+                necessario mapearmos todos as propriedades do identity novamente. 
+                Com o trecho de codigo abaixo nos livra de fazer isso, já que no fim acabamos 
+                invocando o metodo pai do identity. 
+            */  
             base.OnModelCreating(modelBuilder);
+
+           
         }
 
         // public DbSet<User> Users { get; set; }

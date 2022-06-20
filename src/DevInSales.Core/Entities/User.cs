@@ -7,4 +7,6 @@ namespace DevInSales.Core.Entities
         public string Name { get; set; }
         public DateTime BirthDate { get;  set; }   
     }
+
+    public class ApplicationRole: IdentityRole<int>{}
 }

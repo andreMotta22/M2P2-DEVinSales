@@ -4,6 +4,7 @@ using DevInSales.Core.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DevInSales.Core.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20220619231008_colocando os roles")]
+    partial class colocandoosroles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -520,14 +522,14 @@ namespace DevInSales.Core.Migrations
                             Id = 1,
                             AccessFailedCount = 0,
                             BirthDate = new DateTime(1980, 10, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ConcurrencyStamp = "98a537d1-31c9-44ec-bc4f-f5de292e6e7f",
+                            ConcurrencyStamp = "6c01a31b-baac-4002-89e9-94cecdae28f0",
                             Email = "Allie.Spencer@manuel.us",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             Name = "Allie",
                             NormalizedEmail = "ALLIE.SPENCER@MANUEL.US",
                             NormalizedUserName = "ALLIESPENCER",
-                            PasswordHash = "AQAAAAEAACcQAAAAELsXSVgjaKH3d49m8jKQFQ9gPVSHJgEItlhEnjAaKD5qARFOKhfrM6chP+2oX+fwUg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEPoQ4SvLojvVVpT0ojtDER3veYuBVuOoB93JBx72aFEgamNB3zrTvDGU13ImscPmHQ==",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
                             UserName = "Allie Spencer"
@@ -567,23 +569,20 @@ namespace DevInSales.Core.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "29265ac0-2c90-4248-9600-b9bb44051a70",
-                            Name = "Admin",
-                            NormalizedName = "ADMIN"
+                            ConcurrencyStamp = "d10ececc-2c65-48de-a007-83d01064171b",
+                            Name = "Admin"
                         },
                         new
                         {
                             Id = 2,
-                            ConcurrencyStamp = "d2732e63-3e4f-41e2-bf0e-5e59f1d62a4f",
-                            Name = "Gerente",
-                            NormalizedName = "GERENTE"
+                            ConcurrencyStamp = "37d82308-9ff3-46a9-bf56-ac959e745cb2",
+                            Name = "Gerente"
                         },
                         new
                         {
                             Id = 3,
-                            ConcurrencyStamp = "9751afb2-8162-4604-9bf7-167bba11368d",
-                            Name = "Usuario",
-                            NormalizedName = "USUARIO"
+                            ConcurrencyStamp = "cfd5b309-b56b-4f63-bcd9-48801dc6a48a",
+                            Name = "Usuario"
                         });
                 });
 
