@@ -1,15 +1,16 @@
+using DevInSales.Core.DTOs;
 using DevInSales.Core.Entities;
 
 namespace DevInSales.EFCoreApi.Core.Interfaces
 {
     public interface IUserService
     {
-        public List<User> ObterUsers(string? name, string? DateMin, string? DateMax);
+        // public List<User> ObterUsers(string? name, string? DateMin, string? DateMax);
 
-        public User? ObterPorId(int id);
+        public UserResponse? ObterPorId(int id);
+        public Task<UserCadastroResponse> CriarUser(UserRequest user);
+        public Task<UserLoginResponse> LogarUser(UserLoginRequest user);
 
-        public int CriarUser(User user);
-
-        public void RemoverUser(int id);
+        // public void RemoverUser(int id);
     }
 }

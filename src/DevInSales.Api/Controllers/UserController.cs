@@ -1,4 +1,5 @@
 using DevInSales.Api.Dtos;
+using DevInSales.Core.DTOs;
 using DevInSales.Core.Entities;
 using DevInSales.EFCoreApi.Api.DTOs.Request;
 using DevInSales.EFCoreApi.Core.Interfaces;
@@ -43,13 +44,13 @@ namespace DevInSales.Api.Controllers
         public ActionResult<List<User>> ObterUsers(string? nome, string? DataMin, string? DataMax)
         {
 
-            var users = _userService.ObterUsers(nome, DataMin, DataMax);
-            if (users == null || users.Count == 0)
-                return NoContent();
+            // var users = _userService.ObterUsers(nome, DataMin, DataMax);
+            // if (users == null || users.Count == 0)
+            //     return NoContent();
 
-            var ListaDto = users.Select(user => UserResponse.ConverterParaEntidade(user)).ToList();
+            // var ListaDto = users.Select(user => UserResponse.ConverterParaEntidade(user)).ToList();
 
-            return Ok(ListaDto);
+            return Ok(new List<User>());
         }
 
 
@@ -75,13 +76,14 @@ namespace DevInSales.Api.Controllers
         [HttpGet("{id}")]
         public ActionResult<User> ObterUserPorId(int id)
         {
-            var user = _userService.ObterPorId(id);
+            // var user = _userService.ObterPorId(1);
+            string? user = null;
             if (user == null)
                 return NotFound();
 
-            var UserDto = UserResponse.ConverterParaEntidade(user);
+            // var UserDto = UserResponse.ConverterParaEntidade(user);
 
-            return Ok(UserDto);
+            return Ok();
         }
 
         /// <summary>
@@ -101,28 +103,22 @@ namespace DevInSales.Api.Controllers
         /// <response code="200">Sucesso.</response>
         /// <response code="204">Pesquisa realizada com sucesso porém não retornou nenhum resultado</response>
         /// <response code="400">Formato invalido</response>
-        [HttpPost]
-        public ActionResult CriarUser(AddUser model)
+        [HttpPost("cadastro")]
+        public async Task<ActionResult<UserCadastroResponse>> CriarUser(UserRequest model)
         {
-            // var user = new User(model.Email, model.Password, model.Name, model.BirthDate);
-
-            // var verifyEmail = new EmailValidate();
-
-            // if (!verifyEmail.IsValidEmail(user.Email))
-            //     return BadRequest("Email inválido");
-
-            // if (user.BirthDate.AddYears(18) > DateTime.Now)
-            //     return BadRequest("Usuário não tem idade suficiente");
-
-            // if (user.Password.Length < 4 || user.Password.Length == 0 || user.Password.All(ch => ch == user.Password[0]))
-            //     return BadRequest("Senha inválida, deve conter pelo menos 4 caracteres e deve conter ao menos um caracter diferente");
-
-
-            // var id = _userService.CriarUser(user);
-
+            var response = await _userService.CriarUser(model);
             // return CreatedAtAction(nameof(ObterUserPorId), new { id = id }, id);
-            return Ok();
+            return Ok(response);
+        }   
+
+        [HttpPost("login") ]
+        public async Task<ActionResult<UserLoginResponse>> LogarUser(UserLoginRequest user){
+            var result = await _userService.LogarUser(user);
+            if(result.Sucess)
+                return Ok(result);
+            return BadRequest(result.Erro);    
         }
+
 
         /// <summary>
         /// Deleta um usuário.
@@ -136,7 +132,7 @@ namespace DevInSales.Api.Controllers
         {
             try
             {
-                _userService.RemoverUser(id);
+                // _userService.RemoverUser(id);
                 return NoContent();
             }
             catch (Exception ex)

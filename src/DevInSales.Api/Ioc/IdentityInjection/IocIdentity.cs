@@ -14,6 +14,7 @@ namespace DevInSales.Api.Ioc.IdentityInjection
                 options.EnableSensitiveDataLogging(true);
             });
             services.AddDefaultIdentity<User>()
+                    .AddRoles<ApplicationRole>()
                     .AddEntityFrameworkStores<DataContext>()
                     .AddDefaultTokenProviders();
 
