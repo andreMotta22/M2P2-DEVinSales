@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DevInSales.Core.Migrations
 {
-    public partial class initial : Migration
+    public partial class inital : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -194,7 +194,7 @@ namespace DevInSales.Core.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     BuyerId = table.Column<int>(type: "int", nullable: false),
                     SellerId = table.Column<int>(type: "int", nullable: false),
-                    SaleDate = table.Column<byte[]>(type: "timestamp", nullable: false)
+                    SaleDate = table.Column<DateTime>(type: "date", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -306,9 +306,19 @@ namespace DevInSales.Core.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[,]
+                {
+                    { 1, "8a4f44d0-4196-4668-97e4-df62c8e03f03", "Admin", "ADMIN" },
+                    { 2, "4cf1f216-e9e3-4530-bf55-9f980a04b2bf", "Gerente", "GERENTE" },
+                    { 3, "59a52c80-47a7-42ad-99a8-a4b51e1c9791", "Usuario", "USUARIO" }
+                });
+
+            migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "BirthDate", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "Name", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { 1, 0, new DateTime(1980, 10, 11, 0, 0, 0, 0, DateTimeKind.Unspecified), "5d7d6a91-0f96-4552-aadb-605171c5e261", "Allie.Spencer@manuel.us", true, false, null, "Allie", "ALLIE.SPENCER@MANUEL.US", null, null, null, false, null, false, "Allie Spencer" });
+                values: new object[] { 1, 0, new DateTime(1980, 10, 11, 0, 0, 0, 0, DateTimeKind.Unspecified), "404b31a3-b894-48c7-ba6b-b659c6f82f6c", "Allie.Spencer@manuel.us", true, false, null, "Allie", "ALLIE.SPENCER@MANUEL.US", "ALLIESPENCER", "AQAAAAEAACcQAAAAEKE0u/FiBScAWT7iFH/VqOdg6sZckWYiGOhg0GUgeYlupKYVnnMPCdVN2RMDBTEcEA==", null, false, null, false, "Allie Spencer" });
 
             migrationBuilder.InsertData(
                 table: "Products",

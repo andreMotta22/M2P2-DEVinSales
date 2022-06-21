@@ -1,10 +1,11 @@
-using DevInSales.Api.Dtos;
+// using DevInSales.Api.Dtos;
 using DevInSales.Core.DTOs;
 using DevInSales.Core.Entities;
-using DevInSales.EFCoreApi.Api.DTOs.Request;
+// using DevInSales.EFCoreApi.Api.DTOs.Request;
 using DevInSales.EFCoreApi.Core.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using RegexExamples;
+// using RegexExamples;
 
 namespace DevInSales.Api.Controllers
 {
@@ -41,18 +42,18 @@ namespace DevInSales.Api.Controllers
         /// <response code="204">Pesquisa realizada com sucesso porém não retornou nenhum resultado</response>
 
         [HttpGet]
-        public ActionResult<List<User>> ObterUsers(string? nome, string? DataMin, string? DataMax)
+        public ActionResult<List<UserResponse>> ObterUsers(string? nome, string? DataMin, string? DataMax)
         {
 
-            // var users = _userService.ObterUsers(nome, DataMin, DataMax);
-            // if (users == null || users.Count == 0)
-            //     return NoContent();
+            var users = _userService.ObterUsers(nome, DataMin, DataMax);
+            if (users == null || users.Count == 0)
+                return NoContent();
 
-            // var ListaDto = users.Select(user => UserResponse.ConverterParaEntidade(user)).ToList();
+            var listaDto = users.Select(user => new UserResponse(user.Id,user.Name,user.UserName,user.Email,user.BirthDate))
+                                .ToList();
 
-            return Ok(new List<User>());
+            return Ok(listaDto);
         }
-
 
         /// <summary>
         /// Busca um usuário por id.
@@ -74,16 +75,15 @@ namespace DevInSales.Api.Controllers
         /// <response code="200">Sucesso.</response>
         /// <response code="404">Not Found, estado não encontrado no stateId informado.</response>
         [HttpGet("{id}")]
-        public ActionResult<User> ObterUserPorId(int id)
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<UserResponse?>> ObterUserPorId(int id)
         {
-            // var user = _userService.ObterPorId(1);
-            string? user = null;
+            var user = await _userService.ObterPorId(id);
             if (user == null)
                 return NotFound();
 
-            // var UserDto = UserResponse.ConverterParaEntidade(user);
-
-            return Ok();
+            var UserDto = new UserResponse(user.Id,user.Name,user.UserName,user.Email,user.BirthDate); 
+            return Ok(UserDto);
         }
 
         /// <summary>
@@ -114,11 +114,15 @@ namespace DevInSales.Api.Controllers
         [HttpPost("login") ]
         public async Task<ActionResult<UserLoginResponse>> LogarUser(UserLoginRequest user){
             var result = await _userService.LogarUser(user);
+
             if(result.Sucess)
                 return Ok(result);
-            return BadRequest(result.Erro);    
+            return Unauthorized(result.Erro);    
         }
-
+        [HttpGet("logado")] 
+        public ActionResult<bool> Logado(){
+            return Ok(User.Identity);
+        }
 
         /// <summary>
         /// Deleta um usuário.

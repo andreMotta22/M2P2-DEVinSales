@@ -71,9 +71,9 @@ namespace DevInSales.Api.Controllers
         /// <response code="201">Criado com sucesso.</response>
         /// <response code="400">Bad Request, quando não é enviado um buyerId.</response>
         /// <response code="404">Not Found, caso não exista um usuário com o Id enviado.</response>
+
         [HttpPost("/api/user/{userId}/sales")]
         [ProducesResponseType(StatusCodes.Status201Created)]
-
         public ActionResult<int> CreateSaleBySellerId(int userId, SaleBySellerRequest saleRequest)
         {
             try

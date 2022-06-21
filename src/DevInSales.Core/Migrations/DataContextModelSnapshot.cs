@@ -60,6 +60,59 @@ namespace DevInSales.Core.Migrations
                     b.ToTable("Addresses", (string)null);
                 });
 
+            modelBuilder.Entity("DevInSales.Core.Entities.ApplicationRole", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ConcurrencyStamp = "8a4f44d0-4196-4668-97e4-df62c8e03f03",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ConcurrencyStamp = "4cf1f216-e9e3-4530-bf55-9f980a04b2bf",
+                            Name = "Gerente",
+                            NormalizedName = "GERENTE"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ConcurrencyStamp = "59a52c80-47a7-42ad-99a8-a4b51e1c9791",
+                            Name = "Usuario",
+                            NormalizedName = "USUARIO"
+                        });
+                });
+
             modelBuilder.Entity("DevInSales.Core.Entities.City", b =>
                 {
                     b.Property<int>("Id")
@@ -206,9 +259,8 @@ namespace DevInSales.Core.Migrations
                     b.Property<int>("BuyerId")
                         .HasColumnType("int");
 
-                    b.Property<byte[]>("SaleDate")
-                        .IsRequired()
-                        .HasColumnType("timestamp");
+                    b.Property<DateTime>("SaleDate")
+                        .HasColumnType("date");
 
                     b.Property<int>("SellerId")
                         .HasColumnType("int");
@@ -520,70 +572,17 @@ namespace DevInSales.Core.Migrations
                             Id = 1,
                             AccessFailedCount = 0,
                             BirthDate = new DateTime(1980, 10, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ConcurrencyStamp = "98a537d1-31c9-44ec-bc4f-f5de292e6e7f",
+                            ConcurrencyStamp = "404b31a3-b894-48c7-ba6b-b659c6f82f6c",
                             Email = "Allie.Spencer@manuel.us",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             Name = "Allie",
                             NormalizedEmail = "ALLIE.SPENCER@MANUEL.US",
                             NormalizedUserName = "ALLIESPENCER",
-                            PasswordHash = "AQAAAAEAACcQAAAAELsXSVgjaKH3d49m8jKQFQ9gPVSHJgEItlhEnjAaKD5qARFOKhfrM6chP+2oX+fwUg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKE0u/FiBScAWT7iFH/VqOdg6sZckWYiGOhg0GUgeYlupKYVnnMPCdVN2RMDBTEcEA==",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
                             UserName = "Allie Spencer"
-                        });
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole<int>", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("NormalizedName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NormalizedName")
-                        .IsUnique()
-                        .HasDatabaseName("RoleNameIndex")
-                        .HasFilter("[NormalizedName] IS NOT NULL");
-
-                    b.ToTable("AspNetRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            ConcurrencyStamp = "29265ac0-2c90-4248-9600-b9bb44051a70",
-                            Name = "Admin",
-                            NormalizedName = "ADMIN"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            ConcurrencyStamp = "d2732e63-3e4f-41e2-bf0e-5e59f1d62a4f",
-                            Name = "Gerente",
-                            NormalizedName = "GERENTE"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            ConcurrencyStamp = "9751afb2-8162-4604-9bf7-167bba11368d",
-                            Name = "Usuario",
-                            NormalizedName = "USUARIO"
                         });
                 });
 
@@ -775,7 +774,7 @@ namespace DevInSales.Core.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole<int>", null)
+                    b.HasOne("DevInSales.Core.Entities.ApplicationRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -802,7 +801,7 @@ namespace DevInSales.Core.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<int>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole<int>", null)
+                    b.HasOne("DevInSales.Core.Entities.ApplicationRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
