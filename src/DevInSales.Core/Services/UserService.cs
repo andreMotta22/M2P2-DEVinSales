@@ -98,9 +98,6 @@ namespace DevInSales.Core.Entities
             return query.ToList();
         }
         
-        public  bool Logado(ClaimsPrincipal user){
-            return _userSign.IsSignedIn(user);
-        }
         // public void RemoverUser(int id)
         // {
         //     if (id >= 0)

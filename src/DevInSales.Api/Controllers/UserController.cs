@@ -1,4 +1,5 @@
 // using DevInSales.Api.Dtos;
+using System.IdentityModel.Tokens.Jwt;
 using DevInSales.Core.DTOs;
 using DevInSales.Core.Entities;
 // using DevInSales.EFCoreApi.Api.DTOs.Request;
@@ -42,6 +43,7 @@ namespace DevInSales.Api.Controllers
         /// <response code="204">Pesquisa realizada com sucesso porém não retornou nenhum resultado</response>
 
         [HttpGet]
+        [Authorize(Roles = "Admin,Usuario")]
         public ActionResult<List<UserResponse>> ObterUsers(string? nome, string? DataMin, string? DataMax)
         {
 
@@ -114,14 +116,19 @@ namespace DevInSales.Api.Controllers
         [HttpPost("login") ]
         public async Task<ActionResult<UserLoginResponse>> LogarUser(UserLoginRequest user){
             var result = await _userService.LogarUser(user);
-
             if(result.Sucess)
                 return Ok(result);
             return Unauthorized(result.Erro);    
         }
+
+        // vou usar isso aqui depois
         [HttpGet("logado")] 
         public ActionResult<bool> Logado(){
-            return Ok(User.Identity);
+            var email = User.Claims.FirstOrDefault(a => a.Type == "Email")?.Value;
+            if(email != null) {
+                return Ok(true);
+            }
+            return BadRequest(false);
         }
 
         /// <summary>

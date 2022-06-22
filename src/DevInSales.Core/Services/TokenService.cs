@@ -53,7 +53,7 @@ namespace DevInSales.Core.Services
             var roles = await _userManager.GetRolesAsync(user);
 
             claims.Add(new Claim(JwtRegisteredClaimNames.Sub, Convert.ToString(user.Id)));
-            claims.Add(new Claim(JwtRegisteredClaimNames.Email, user.Email));
+            claims.Add(new Claim("Email", user.Email));
             claims.Add(new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())); // é o id do token
             claims.Add(new Claim(JwtRegisteredClaimNames.Nbf, DateTime.Now.ToString()));            
             claims.Add(new Claim(JwtRegisteredClaimNames.Iat, DateTime.Now.ToString())); 

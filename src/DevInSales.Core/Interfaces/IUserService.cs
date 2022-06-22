@@ -11,8 +11,6 @@ namespace DevInSales.EFCoreApi.Core.Interfaces
         public Task<UserCadastroResponse> CriarUser(UserRequest user);
         public Task<UserLoginResponse> LogarUser(UserLoginRequest user);
 
-        public bool Logado(ClaimsPrincipal user);
-
         // public void RemoverUser(int id);
     }
 }
