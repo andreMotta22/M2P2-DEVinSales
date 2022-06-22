@@ -1,4 +1,5 @@
 using DevInSales.Core.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DevInSales.Api.Controllers
@@ -36,6 +37,7 @@ namespace DevInSales.Api.Controllers
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [Authorize(Roles = "Admin,Usuario,Gerente")]
         public ActionResult GetAll(string? name)
         {
             var statesList = _stateService.GetAll(name);
@@ -62,6 +64,7 @@ namespace DevInSales.Api.Controllers
         [HttpGet("{stateId}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Authorize(Roles = "Admin,Usuario,Gerente")]
         public ActionResult GetByStateId(int stateId)
         {
             var state = _stateService.GetById(stateId);

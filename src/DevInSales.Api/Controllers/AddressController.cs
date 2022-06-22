@@ -1,6 +1,7 @@
 using DevInSales.Api.Dtos;
 using DevInSales.Core.Entities;
 using DevInSales.Core.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -56,6 +57,7 @@ namespace DevInSales.Api.Controllers
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [Authorize(Roles = "Admin,Gerente,Usuario")]
         public ActionResult GetAll(int? stateId, int? cityId, string? street, string? cep)
         {
             var addresses = _addressService.GetAll(stateId, cityId, street, cep);
@@ -87,6 +89,7 @@ namespace DevInSales.Api.Controllers
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Authorize(Roles = "Admin,Gerente")]
         public ActionResult AddAddress(int stateId, int cityId, AddAddress model)
         {
             var state = _stateService.GetById(stateId);
@@ -122,6 +125,7 @@ namespace DevInSales.Api.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Authorize(Roles = "Admin")]
         public ActionResult DeleteAddress(int addressId)
         {
             var address = _addressService.GetById(addressId);
@@ -163,6 +167,7 @@ namespace DevInSales.Api.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Authorize(Roles = "Admin,Gerente")]
         public ActionResult UpdateAddress(int addressId, UpdateAddress model)
         {
             var address = _addressService.GetById(addressId);

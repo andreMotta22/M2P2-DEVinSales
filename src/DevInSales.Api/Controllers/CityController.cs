@@ -1,6 +1,7 @@
 using DevInSales.Api.Dtos;
 using DevInSales.Core.Entities;
 using DevInSales.Core.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DevInSales.Api.Controllers
@@ -45,6 +46,7 @@ namespace DevInSales.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Authorize(Roles = "Admin,Gerente,Usuario")]
         public ActionResult GetCityByStateId(int stateId, string? name)
         {
             var state = _stateService.GetById(stateId);
@@ -82,6 +84,7 @@ namespace DevInSales.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Authorize(Roles = "Admin,Gerente,Usuario")]
         public ActionResult GetCityById(int stateId, int cityId)
         {
             var state = _stateService.GetById(stateId);
@@ -116,6 +119,7 @@ namespace DevInSales.Api.Controllers
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Authorize(Roles = "Admin,Gerente")]
         public ActionResult AddCity(int stateId, AddCity model)
         {
             var state = _stateService.GetById(stateId);

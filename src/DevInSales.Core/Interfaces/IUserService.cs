@@ -10,7 +10,6 @@ namespace DevInSales.EFCoreApi.Core.Interfaces
         public Task<User?> ObterPorId(int id);
         public Task<UserCadastroResponse> CriarUser(UserRequest user);
         public Task<UserLoginResponse> LogarUser(UserLoginRequest user);
-
-        // public void RemoverUser(int id);
+        public void RemoverUser(int id);
     }
 }

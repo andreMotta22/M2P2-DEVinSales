@@ -98,16 +98,16 @@ namespace DevInSales.Core.Entities
             return query.ToList();
         }
         
-        // public void RemoverUser(int id)
-        // {
-        //     if (id >= 0)
-        //     {
-        //         var user = _context.Users.FirstOrDefault(user => user.Id == id);
-        //         if (user != null)
-        //             _context.Users.Remove(user);
-        //         _context.SaveChanges();
-        //     }
-        // }
+        public void RemoverUser(int id)
+        {
+            if (id >= 0)
+            {
+                var user = _context.Users.FirstOrDefault(user => user.Id == id);
+                if (user != null)
+                    _context.Users.Remove(user);
+                _context.SaveChanges();
+            }
+        }
         
     }
 }

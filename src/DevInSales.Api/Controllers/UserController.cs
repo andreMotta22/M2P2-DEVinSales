@@ -43,7 +43,7 @@ namespace DevInSales.Api.Controllers
         /// <response code="204">Pesquisa realizada com sucesso porém não retornou nenhum resultado</response>
 
         [HttpGet]
-        [Authorize(Roles = "Admin,Usuario")]
+        [Authorize(Roles = "Admin,Usuario,Gerente")]
         public ActionResult<List<UserResponse>> ObterUsers(string? nome, string? DataMin, string? DataMax)
         {
 
@@ -77,7 +77,7 @@ namespace DevInSales.Api.Controllers
         /// <response code="200">Sucesso.</response>
         /// <response code="404">Not Found, estado não encontrado no stateId informado.</response>
         [HttpGet("{id}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin,Usuario,Gerente")]
         public async Task<ActionResult<UserResponse?>> ObterUserPorId(int id)
         {
             var user = await _userService.ObterPorId(id);
@@ -139,11 +139,12 @@ namespace DevInSales.Api.Controllers
         /// <response code="500">Internal Server Error, erro interno do servidor.</response>
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public ActionResult ExcluirUser(int id)
         {
             try
             {
-                // _userService.RemoverUser(id);
+                _userService.RemoverUser(id);
                 return NoContent();
             }
             catch (Exception ex)
