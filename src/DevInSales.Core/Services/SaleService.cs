@@ -15,6 +15,7 @@ namespace DevInSales.Core.Services
         {
             _context = context;
         }
+        // testado
         public int CreateSaleByUserId(Sale sale)
         {
             

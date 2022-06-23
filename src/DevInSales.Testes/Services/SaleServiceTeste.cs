@@ -30,6 +30,7 @@ namespace DevInSales.Testes.Services
             var expected = Assert.Throws<ArgumentNullException>(() => _servico.CreateSaleByUserId(new Sale(idBuyer, idSeller, DateTime.Now)));
             Assert.Equal("Id não pode ser nulo nem zero.", expected.ParamName);
         }
+        
         [Theory]
         [InlineData(5, 1)]
         public void CreateSaleByUserId_BuyerNaoExiste_RetornaException(int idBuyer, int idSeller)
@@ -61,6 +62,27 @@ namespace DevInSales.Testes.Services
             Assert.Equal(expectedId, resultId);
         }
 
+        [Theory]
+        [InlineData(0)]
+        [InlineData(-1)]
+        public void GetSaleById_SellerNaoExiste_RetornaNull(int id) 
+        {
+            var sale = _servico.GetSaleById(id);
+            Assert.Null(sale);
+        }
+
+        [Theory]
+        [InlineData(1)]
+        public void GetSaleById_SellerExiste_RetornaSellerResponse(int id)
+        {
+            Seeds();
+            var sale1 =  _context.Sales.FirstOrDefault(u => u.Id == id);
+            var sale2 = _servico.GetSaleById(id);
+
+            Assert.Equal(sale1.Id, sale2.SaleId);
+        }
+
+
         public void Seeds() 
         {
             _context.Users.AddRange(new List<User>() {
@@ -89,6 +111,11 @@ namespace DevInSales.Testes.Services
                     PasswordHash = "desenhos2"
                 }
             });
+            _context.Sales.AddRange(
+                new List<Sale>()
+                {
+                    new Sale(1,2,DateTime.Now)
+                });
             _context.SaveChanges();
 
         }
