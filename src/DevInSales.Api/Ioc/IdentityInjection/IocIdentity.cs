@@ -1,5 +1,6 @@
 using DevInSales.Core.Data.Context;
 using DevInSales.Core.Entities;
+using DevInSales.Core.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 

@@ -11,14 +11,14 @@ namespace DevInSales.Core.Entities
     public class UserService : IUserService
     {
         private readonly DataContext _context;
-        private readonly UserManager<User> _userManager;
-        private readonly SignInManager<User> _userSign;
-        private readonly RoleManager<ApplicationRole> _roleManager;
+        private readonly IUserManager<User> _userManager;
+        private readonly ISignInManager _userSign;
+        private readonly IRoleManager _roleManager;
         private readonly ITokenService _token;
 
-        public UserService(UserManager<User> userManager,
-                           SignInManager<User> sign,
-                           RoleManager<ApplicationRole> roleManager,
+        public UserService(IUserManager<User> userManager,
+                           ISignInManager sign,
+                           IRoleManager roleManager,
                            ITokenService token,
                            DataContext context)
         {
@@ -80,11 +80,13 @@ namespace DevInSales.Core.Entities
                 return login;    
             }
         }
-
+        
+        // testado
         public async Task<User?> ObterPorId(int id)
         {
            return await _context.Users.FindAsync(id);
         }
+        // testado
         public List<User> ObterUsers(string? name, string? DataMin, string? DataMax)
         {
             var query = _context.Users.AsQueryable();
@@ -97,16 +99,18 @@ namespace DevInSales.Core.Entities
 
             return query.ToList();
         }
-        
+        // testado
         public void RemoverUser(int id)
         {
-            if (id >= 0)
+            if (id > 0)
             {
                 var user = _context.Users.FirstOrDefault(user => user.Id == id);
                 if (user != null)
                     _context.Users.Remove(user);
                 _context.SaveChanges();
+                return;
             }
+            throw new ArgumentException("Impossivel pesquisar por um id desse tipo");
         }
         
     }

@@ -36,6 +36,9 @@ builder.Services.AddScoped<ICityService, CityService>();
 builder.Services.AddScoped<IAddressService, AddressService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IUserService,UserService>();
+builder.Services.AddScoped<IUserManager<User>,UserManager>();
+builder.Services.AddScoped<IRoleManager,Role>();
+builder.Services.AddScoped<ISignInManager, Sign>();
 
 // var securityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(builder.Configuration.GetSection("Jwt:SecurityKey").Value));
 

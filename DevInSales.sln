@@ -1,23 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1D1B14E9-6F6C-4920-B255-B9730B354EEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevInSales.Core", "src\DevInSales.Core\DevInSales.Core.csproj", "{E35FB3C7-9EAD-4836-84A4-0E674E2907A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevInSales.Core", "src\DevInSales.Core\DevInSales.Core.csproj", "{E35FB3C7-9EAD-4836-84A4-0E674E2907A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevInSales.Api", "src\DevInSales.Api\DevInSales.Api.csproj", "{9F3EBC67-4DC4-4AC4-BB16-63E33D43EA90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevInSales.Api", "src\DevInSales.Api\DevInSales.Api.csproj", "{9F3EBC67-4DC4-4AC4-BB16-63E33D43EA90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevInSales.Identity", "src\DevInSales.Identity\DevInSales.Identity.csproj", "{8C826D74-5AC6-4749-ACD8-D82EA3A52EE2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevInSales.Testes", "src\DevInSales.Testes\DevInSales.Testes.csproj", "{AB5A8B79-EC08-4936-9EAE-2923BE77638F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E35FB3C7-9EAD-4836-84A4-0E674E2907A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -28,14 +25,19 @@ Global
 		{9F3EBC67-4DC4-4AC4-BB16-63E33D43EA90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F3EBC67-4DC4-4AC4-BB16-63E33D43EA90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F3EBC67-4DC4-4AC4-BB16-63E33D43EA90}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8C826D74-5AC6-4749-ACD8-D82EA3A52EE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8C826D74-5AC6-4749-ACD8-D82EA3A52EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8C826D74-5AC6-4749-ACD8-D82EA3A52EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8C826D74-5AC6-4749-ACD8-D82EA3A52EE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB5A8B79-EC08-4936-9EAE-2923BE77638F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB5A8B79-EC08-4936-9EAE-2923BE77638F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB5A8B79-EC08-4936-9EAE-2923BE77638F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB5A8B79-EC08-4936-9EAE-2923BE77638F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E35FB3C7-9EAD-4836-84A4-0E674E2907A8} = {1D1B14E9-6F6C-4920-B255-B9730B354EEA}
 		{9F3EBC67-4DC4-4AC4-BB16-63E33D43EA90} = {1D1B14E9-6F6C-4920-B255-B9730B354EEA}
-		{8C826D74-5AC6-4749-ACD8-D82EA3A52EE2} = {1D1B14E9-6F6C-4920-B255-B9730B354EEA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {088D3727-5D4B-4981-B445-30913AEBE107}
 	EndGlobalSection
 EndGlobal
