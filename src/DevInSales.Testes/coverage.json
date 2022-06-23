@@ -1,0 +1,4889 @@
+{
+  "DevInSales.Core.dll": {
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Dtos\\UserResponse.cs": {
+      "DevInSales.EFCoreApi.Api.DTOs.Request.UserResponse": {
+        "System.Int32 DevInSales.EFCoreApi.Api.DTOs.Request.UserResponse::get_Id()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.EFCoreApi.Api.DTOs.Request.UserResponse::get_Email()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.EFCoreApi.Api.DTOs.Request.UserResponse::get_Name()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime DevInSales.EFCoreApi.Api.DTOs.Request.UserResponse::get_BirthDate()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.EFCoreApi.Api.DTOs.Request.UserResponse DevInSales.EFCoreApi.Api.DTOs.Request.UserResponse::ConverterParaEntidade(DevInSales.Core.Entities.User)": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.EFCoreApi.Api.DTOs.Request.UserResponse::.ctor(System.Int32,System.String,System.String,System.DateTime)": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Utils\\ValidadeAge.cs": {
+      "DevInSales.Core.Utils.ValidadeAge": {
+        "System.ComponentModel.DataAnnotations.ValidationResult DevInSales.Core.Utils.ValidadeAge::IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "13": 0,
+            "14": 0
+          },
+          "Branches": [
+            {
+              "Line": 10,
+              "Offset": 35,
+              "EndOffset": 37,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 10,
+              "Offset": 35,
+              "EndOffset": 45,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Services\\AddressService.cs": {
+      "DevInSales.Core.Services.AddressService": {
+        "System.Collections.Generic.List`1<DevInSales.Core.Data.Dtos.ReadAddress> DevInSales.Core.Services.AddressService::GetAll(System.Nullable`1<System.Int32>,System.Nullable`1<System.Int32>,System.String,System.String)": {
+          "Lines": {
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0
+          },
+          "Branches": [
+            {
+              "Line": 22,
+              "Offset": 210,
+              "EndOffset": 212,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 210,
+              "EndOffset": 327,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 342,
+              "EndOffset": 347,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 342,
+              "EndOffset": 482,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 500,
+              "EndOffset": 505,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 500,
+              "EndOffset": 679,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 28,
+              "Offset": 697,
+              "EndOffset": 699,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 28,
+              "Offset": 697,
+              "EndOffset": 799,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void DevInSales.Core.Services.AddressService::Add(DevInSales.Core.Entities.Address)": {
+          "Lines": {
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Entities.Address DevInSales.Core.Services.AddressService::GetById(System.Int32)": {
+          "Lines": {
+            "40": 0,
+            "41": 0,
+            "42": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Services.AddressService::Delete(DevInSales.Core.Entities.Address)": {
+          "Lines": {
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Services.AddressService::Update(DevInSales.Core.Entities.Address)": {
+          "Lines": {
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Services.AddressService::.ctor(DevInSales.Core.Data.Context.DataContext)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Services\\CityService.cs": {
+      "DevInSales.Core.Services.CityService": {
+        "System.Collections.Generic.List`1<DevInSales.Core.Data.Dtos.ReadCity> DevInSales.Core.Services.CityService::GetAll(System.Int32,System.String)": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Data.Dtos.ReadCity DevInSales.Core.Services.CityService::GetById(System.Int32)": {
+          "Lines": {
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "40": 0,
+            "41": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Services.CityService::Add(DevInSales.Core.Entities.City)": {
+          "Lines": {
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Services.CityService::.ctor(DevInSales.Core.Data.Context.DataContext)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Services\\DeliveryService.cs": {
+      "DevInSales.Core.Services.DeliveryService": {
+        "System.Collections.Generic.List`1<DevInSales.Core.Entities.Delivery> DevInSales.Core.Services.DeliveryService::GetBy(System.Nullable`1<System.Int32>,System.Nullable`1<System.Int32>)": {
+          "Lines": {
+            "18": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": [
+            {
+              "Line": 20,
+              "Offset": 32,
+              "EndOffset": 34,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 32,
+              "EndOffset": 50,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 53,
+              "EndOffset": 55,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 53,
+              "EndOffset": 78,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void DevInSales.Core.Services.DeliveryService::.ctor(DevInSales.Core.Data.Context.DataContext)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Services\\ProductService.cs": {
+      "DevInSales.Core.Services.ProductService": {
+        "System.Void DevInSales.Core.Services.ProductService::Atualizar()": {
+          "Lines": {
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Entities.Product DevInSales.Core.Services.ProductService::ObterProductPorId(System.Int32)": {
+          "Lines": {
+            "23": 0,
+            "24": 0,
+            "25": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean DevInSales.Core.Services.ProductService::ProdutoExiste(System.String)": {
+          "Lines": {
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": [
+            {
+              "Line": 31,
+              "Offset": 186,
+              "EndOffset": 188,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 31,
+              "Offset": 186,
+              "EndOffset": 191,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void DevInSales.Core.Services.ProductService::Delete(System.Int32)": {
+          "Lines": {
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0
+          },
+          "Branches": [
+            {
+              "Line": 36,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 36,
+              "Offset": 15,
+              "EndOffset": 28,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Collections.Generic.List`1<DevInSales.Core.Entities.Product> DevInSales.Core.Services.ProductService::ObterProdutos(System.String,System.Nullable`1<System.Decimal>,System.Nullable`1<System.Decimal>)": {
+          "Lines": {
+            "43": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "53": 0,
+            "54": 0
+          },
+          "Branches": [
+            {
+              "Line": 46,
+              "Offset": 61,
+              "EndOffset": 66,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 46,
+              "Offset": 61,
+              "EndOffset": 240,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 48,
+              "Offset": 255,
+              "EndOffset": 257,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 48,
+              "Offset": 255,
+              "EndOffset": 372,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 50,
+              "Offset": 387,
+              "EndOffset": 389,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 50,
+              "Offset": 387,
+              "EndOffset": 504,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Int32 DevInSales.Core.Services.ProductService::CreateNewProduct(DevInSales.Core.Entities.Product)": {
+          "Lines": {
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Services.ProductService::.ctor(DevInSales.Core.Data.Context.DataContext)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Services\\SaleProductService.cs": {
+      "DevInSales.Core.Services.SaleProductService": {
+        "System.Int32 DevInSales.Core.Services.SaleProductService::CreateSaleProduct(System.Int32,DevInSales.Core.Data.Dtos.SaleProductRequest)": {
+          "Lines": {
+            "26": 0,
+            "28": 0,
+            "29": 0,
+            "31": 0,
+            "32": 0,
+            "34": 0,
+            "35": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "42": 0,
+            "43": 0
+          },
+          "Branches": [
+            {
+              "Line": 28,
+              "Offset": 150,
+              "EndOffset": 152,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 28,
+              "Offset": 150,
+              "EndOffset": 266,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 28,
+              "Offset": 269,
+              "EndOffset": 271,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 28,
+              "Offset": 269,
+              "EndOffset": 282,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 31,
+              "Offset": 309,
+              "EndOffset": 314,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 31,
+              "Offset": 309,
+              "EndOffset": 465,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 34,
+              "Offset": 508,
+              "EndOffset": 510,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 34,
+              "Offset": 508,
+              "EndOffset": 550,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 34,
+              "Offset": 555,
+              "EndOffset": 557,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 34,
+              "Offset": 555,
+              "EndOffset": 568,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Int32 DevInSales.Core.Services.SaleProductService::GetSaleProductById(System.Int32)": {
+          "Lines": {
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "53": 0,
+            "54": 0,
+            "56": 0,
+            "59": 0,
+            "61": 0
+          },
+          "Branches": [
+            {
+              "Line": 53,
+              "Offset": 254,
+              "EndOffset": 256,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 53,
+              "Offset": 254,
+              "EndOffset": 262,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void DevInSales.Core.Services.SaleProductService::.ctor(DevInSales.Core.Data.Context.DataContext)": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Services\\SaleService.cs": {
+      "DevInSales.Core.Services.SaleService": {
+        "System.Int32 DevInSales.Core.Services.SaleService::CreateSaleByUserId(DevInSales.Core.Entities.Sale)": {
+          "Lines": {
+            "20": 6,
+            "22": 6,
+            "23": 0,
+            "24": 6,
+            "25": 3,
+            "26": 3,
+            "27": 1,
+            "28": 2,
+            "29": 1,
+            "31": 1,
+            "32": 1,
+            "34": 1,
+            "35": 1
+          },
+          "Branches": [
+            {
+              "Line": 22,
+              "Offset": 37,
+              "EndOffset": 39,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 37,
+              "EndOffset": 51,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            },
+            {
+              "Line": 24,
+              "Offset": 62,
+              "EndOffset": 64,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 4
+            },
+            {
+              "Line": 24,
+              "Offset": 62,
+              "EndOffset": 80,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 24,
+              "Offset": 83,
+              "EndOffset": 85,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 3
+            },
+            {
+              "Line": 24,
+              "Offset": 83,
+              "EndOffset": 96,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 3
+            },
+            {
+              "Line": 26,
+              "Offset": 238,
+              "EndOffset": 240,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            },
+            {
+              "Line": 26,
+              "Offset": 238,
+              "EndOffset": 251,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 2
+            },
+            {
+              "Line": 28,
+              "Offset": 395,
+              "EndOffset": 397,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 1
+            },
+            {
+              "Line": 28,
+              "Offset": 395,
+              "EndOffset": 408,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 1
+            }
+          ]
+        },
+        "DevInSales.Core.Data.Dtos.SaleResponse DevInSales.Core.Services.SaleService::GetSaleById(System.Int32)": {
+          "Lines": {
+            "38": 3,
+            "39": 3,
+            "40": 3,
+            "41": 3,
+            "42": 3,
+            "44": 3,
+            "45": 2,
+            "46": 2,
+            "49": 1,
+            "51": 1,
+            "52": 3
+          },
+          "Branches": [
+            {
+              "Line": 44,
+              "Offset": 256,
+              "EndOffset": 258,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 44,
+              "Offset": 256,
+              "EndOffset": 264,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Collections.Generic.List`1<DevInSales.Core.Data.Dtos.SaleProductResponse> DevInSales.Core.Services.SaleService::GetSaleProductsBySaleId(System.Int32)": {
+          "Lines": {
+            "55": 1,
+            "56": 1,
+            "57": 1,
+            "58": 1,
+            "59": 1,
+            "60": 1,
+            "61": 1
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<DevInSales.Core.Entities.Sale> DevInSales.Core.Services.SaleService::GetSaleBySellerId(System.Nullable`1<System.Int32>)": {
+          "Lines": {
+            "64": 0,
+            "65": 0,
+            "66": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<DevInSales.Core.Entities.Sale> DevInSales.Core.Services.SaleService::GetSaleByBuyerId(System.Nullable`1<System.Int32>)": {
+          "Lines": {
+            "69": 0,
+            "70": 0,
+            "71": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Services.SaleService::UpdateUnitPrice(System.Int32,System.Int32,System.Decimal)": {
+          "Lines": {
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "79": 0,
+            "80": 0,
+            "82": 0,
+            "83": 0,
+            "85": 0,
+            "86": 0,
+            "88": 0,
+            "90": 0,
+            "91": 0
+          },
+          "Branches": [
+            {
+              "Line": 76,
+              "Offset": 139,
+              "EndOffset": 141,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 76,
+              "Offset": 139,
+              "EndOffset": 147,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 82,
+              "Offset": 265,
+              "EndOffset": 267,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 82,
+              "Offset": 265,
+              "EndOffset": 273,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 85,
+              "Offset": 288,
+              "EndOffset": 290,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 85,
+              "Offset": 288,
+              "EndOffset": 296,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void DevInSales.Core.Services.SaleService::UpdateAmount(System.Int32,System.Int32,System.Int32)": {
+          "Lines": {
+            "94": 0,
+            "96": 0,
+            "97": 0,
+            "99": 0,
+            "101": 0,
+            "102": 0,
+            "105": 0,
+            "106": 0,
+            "109": 0,
+            "111": 0,
+            "112": 0
+          },
+          "Branches": [
+            {
+              "Line": 96,
+              "Offset": 135,
+              "EndOffset": 137,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 96,
+              "Offset": 135,
+              "EndOffset": 153,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 101,
+              "Offset": 271,
+              "EndOffset": 273,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 101,
+              "Offset": 271,
+              "EndOffset": 289,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 105,
+              "Offset": 300,
+              "EndOffset": 302,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 105,
+              "Offset": 300,
+              "EndOffset": 318,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Int32 DevInSales.Core.Services.SaleService::CreateDeliveryForASale(DevInSales.Core.Entities.Delivery)": {
+          "Lines": {
+            "115": 0,
+            "116": 0,
+            "118": 0,
+            "119": 0,
+            "122": 0,
+            "124": 0,
+            "125": 0,
+            "128": 0,
+            "129": 0,
+            "131": 0,
+            "133": 0
+          },
+          "Branches": [
+            {
+              "Line": 118,
+              "Offset": 152,
+              "EndOffset": 154,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 118,
+              "Offset": 152,
+              "EndOffset": 170,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 124,
+              "Offset": 308,
+              "EndOffset": 310,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 124,
+              "Offset": 308,
+              "EndOffset": 326,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "DevInSales.Core.Entities.Delivery DevInSales.Core.Services.SaleService::GetDeliveryById(System.Int32)": {
+          "Lines": {
+            "136": 0,
+            "137": 0,
+            "138": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Services.SaleService::.ctor(DevInSales.Core.Data.Context.DataContext)": {
+          "Lines": {
+            "14": 9,
+            "15": 9,
+            "16": 9,
+            "17": 9
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Services\\StateService.cs": {
+      "DevInSales.Core.Services.StateService": {
+        "System.Collections.Generic.List`1<DevInSales.Core.Data.Dtos.ReadState> DevInSales.Core.Services.StateService::GetAll(System.String)": {
+          "Lines": {
+            "18": 2,
+            "19": 2,
+            "20": 2,
+            "21": 2,
+            "22": 2,
+            "23": 2
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Data.Dtos.ReadState DevInSales.Core.Services.StateService::GetById(System.Int32)": {
+          "Lines": {
+            "26": 4,
+            "27": 4,
+            "28": 4,
+            "29": 4
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Services.StateService::.ctor(DevInSales.Core.Data.Context.DataContext)": {
+          "Lines": {
+            "12": 6,
+            "13": 6,
+            "14": 6,
+            "15": 6
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Services\\TokenService.cs": {
+      "DevInSales.Core.Services.TokenService": {
+        "System.Void DevInSales.Core.Services.TokenService::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<DevInSales.Core.Entities.User>,Microsoft.Extensions.Options.IOptions`1<DevInSales.Core.Configuration.JwtOptions>)": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        }
+      },
+      "DevInSales.Core.Services.TokenService/<GetClaims>d__4": {
+        "System.Void DevInSales.Core.Services.TokenService/<GetClaims>d__4::MoveNext()": {
+          "Lines": {
+            "50": 0,
+            "52": 0,
+            "53": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "61": 0,
+            "62": 0,
+            "64": 0,
+            "65": 0
+          },
+          "Branches": [
+            {
+              "Line": 61,
+              "Offset": 430,
+              "EndOffset": 367,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 61,
+              "Offset": 430,
+              "EndOffset": 432,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "DevInSales.Core.Services.TokenService/<GetToken>d__3": {
+        "System.Void DevInSales.Core.Services.TokenService/<GetToken>d__3::MoveNext()": {
+          "Lines": {
+            "25": 0,
+            "28": 0,
+            "30": 0,
+            "32": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Migrations\\20220621015838_inital.cs": {
+      "DevInSales.Core.Migrations.inital": {
+        "System.Void DevInSales.Core.Migrations.inital::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "163": 0,
+            "164": 0,
+            "165": 0,
+            "166": 0,
+            "167": 0,
+            "169": 0,
+            "170": 0,
+            "171": 0,
+            "172": 0,
+            "173": 0,
+            "174": 0,
+            "175": 0,
+            "176": 0,
+            "177": 0,
+            "178": 0,
+            "179": 0,
+            "180": 0,
+            "181": 0,
+            "182": 0,
+            "183": 0,
+            "184": 0,
+            "185": 0,
+            "186": 0,
+            "187": 0,
+            "189": 0,
+            "190": 0,
+            "191": 0,
+            "192": 0,
+            "193": 0,
+            "194": 0,
+            "195": 0,
+            "196": 0,
+            "197": 0,
+            "198": 0,
+            "199": 0,
+            "200": 0,
+            "201": 0,
+            "202": 0,
+            "203": 0,
+            "204": 0,
+            "205": 0,
+            "206": 0,
+            "207": 0,
+            "208": 0,
+            "209": 0,
+            "210": 0,
+            "211": 0,
+            "212": 0,
+            "214": 0,
+            "215": 0,
+            "216": 0,
+            "217": 0,
+            "218": 0,
+            "219": 0,
+            "220": 0,
+            "221": 0,
+            "222": 0,
+            "223": 0,
+            "224": 0,
+            "225": 0,
+            "226": 0,
+            "227": 0,
+            "228": 0,
+            "229": 0,
+            "230": 0,
+            "231": 0,
+            "232": 0,
+            "234": 0,
+            "235": 0,
+            "236": 0,
+            "237": 0,
+            "238": 0,
+            "239": 0,
+            "240": 0,
+            "241": 0,
+            "242": 0,
+            "243": 0,
+            "244": 0,
+            "245": 0,
+            "246": 0,
+            "247": 0,
+            "248": 0,
+            "249": 0,
+            "250": 0,
+            "251": 0,
+            "252": 0,
+            "253": 0,
+            "254": 0,
+            "255": 0,
+            "256": 0,
+            "257": 0,
+            "258": 0,
+            "260": 0,
+            "261": 0,
+            "262": 0,
+            "263": 0,
+            "264": 0,
+            "265": 0,
+            "266": 0,
+            "267": 0,
+            "268": 0,
+            "269": 0,
+            "270": 0,
+            "271": 0,
+            "272": 0,
+            "273": 0,
+            "274": 0,
+            "275": 0,
+            "276": 0,
+            "277": 0,
+            "278": 0,
+            "279": 0,
+            "280": 0,
+            "281": 0,
+            "283": 0,
+            "284": 0,
+            "285": 0,
+            "286": 0,
+            "287": 0,
+            "288": 0,
+            "289": 0,
+            "290": 0,
+            "291": 0,
+            "292": 0,
+            "293": 0,
+            "294": 0,
+            "295": 0,
+            "296": 0,
+            "297": 0,
+            "298": 0,
+            "299": 0,
+            "300": 0,
+            "301": 0,
+            "302": 0,
+            "303": 0,
+            "304": 0,
+            "305": 0,
+            "306": 0,
+            "308": 0,
+            "309": 0,
+            "310": 0,
+            "311": 0,
+            "312": 0,
+            "313": 0,
+            "314": 0,
+            "315": 0,
+            "316": 0,
+            "318": 0,
+            "319": 0,
+            "320": 0,
+            "321": 0,
+            "323": 0,
+            "324": 0,
+            "325": 0,
+            "326": 0,
+            "327": 0,
+            "328": 0,
+            "329": 0,
+            "330": 0,
+            "331": 0,
+            "332": 0,
+            "333": 0,
+            "334": 0,
+            "335": 0,
+            "336": 0,
+            "337": 0,
+            "338": 0,
+            "340": 0,
+            "341": 0,
+            "342": 0,
+            "343": 0,
+            "344": 0,
+            "345": 0,
+            "346": 0,
+            "347": 0,
+            "348": 0,
+            "349": 0,
+            "350": 0,
+            "351": 0,
+            "352": 0,
+            "353": 0,
+            "354": 0,
+            "355": 0,
+            "356": 0,
+            "357": 0,
+            "358": 0,
+            "359": 0,
+            "360": 0,
+            "361": 0,
+            "362": 0,
+            "363": 0,
+            "364": 0,
+            "365": 0,
+            "366": 0,
+            "367": 0,
+            "368": 0,
+            "369": 0,
+            "370": 0,
+            "371": 0,
+            "372": 0,
+            "374": 0,
+            "375": 0,
+            "376": 0,
+            "377": 0,
+            "379": 0,
+            "380": 0,
+            "381": 0,
+            "382": 0,
+            "384": 0,
+            "385": 0,
+            "386": 0,
+            "387": 0,
+            "388": 0,
+            "389": 0,
+            "391": 0,
+            "392": 0,
+            "393": 0,
+            "394": 0,
+            "396": 0,
+            "397": 0,
+            "398": 0,
+            "399": 0,
+            "401": 0,
+            "402": 0,
+            "403": 0,
+            "404": 0,
+            "406": 0,
+            "407": 0,
+            "408": 0,
+            "409": 0,
+            "411": 0,
+            "412": 0,
+            "413": 0,
+            "414": 0,
+            "415": 0,
+            "416": 0,
+            "418": 0,
+            "419": 0,
+            "420": 0,
+            "421": 0,
+            "423": 0,
+            "424": 0,
+            "425": 0,
+            "426": 0,
+            "428": 0,
+            "429": 0,
+            "430": 0,
+            "431": 0,
+            "433": 0,
+            "434": 0,
+            "435": 0,
+            "436": 0,
+            "438": 0,
+            "439": 0,
+            "440": 0,
+            "441": 0,
+            "443": 0,
+            "444": 0,
+            "445": 0,
+            "446": 0,
+            "448": 0,
+            "449": 0,
+            "450": 0,
+            "451": 0,
+            "452": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Migrations.inital::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "455": 0,
+            "456": 0,
+            "457": 0,
+            "459": 0,
+            "460": 0,
+            "462": 0,
+            "463": 0,
+            "465": 0,
+            "466": 0,
+            "468": 0,
+            "469": 0,
+            "471": 0,
+            "472": 0,
+            "474": 0,
+            "475": 0,
+            "477": 0,
+            "478": 0,
+            "480": 0,
+            "481": 0,
+            "483": 0,
+            "484": 0,
+            "486": 0,
+            "487": 0,
+            "489": 0,
+            "490": 0,
+            "492": 0,
+            "493": 0,
+            "495": 0,
+            "496": 0,
+            "497": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Migrations\\20220621015838_inital.Designer.cs": {
+      "DevInSales.Core.Migrations.inital": {
+        "System.Void DevInSales.Core.Migrations.inital::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "19": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "25": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "163": 0,
+            "164": 0,
+            "165": 0,
+            "166": 0,
+            "167": 0,
+            "169": 0,
+            "170": 0,
+            "171": 0,
+            "172": 0,
+            "173": 0,
+            "174": 0,
+            "175": 0,
+            "176": 0,
+            "177": 0,
+            "178": 0,
+            "179": 0,
+            "180": 0,
+            "181": 0,
+            "182": 0,
+            "183": 0,
+            "184": 0,
+            "185": 0,
+            "186": 0,
+            "187": 0,
+            "188": 0,
+            "189": 0,
+            "190": 0,
+            "191": 0,
+            "192": 0,
+            "193": 0,
+            "194": 0,
+            "195": 0,
+            "196": 0,
+            "197": 0,
+            "198": 0,
+            "199": 0,
+            "200": 0,
+            "201": 0,
+            "202": 0,
+            "203": 0,
+            "204": 0,
+            "205": 0,
+            "206": 0,
+            "207": 0,
+            "208": 0,
+            "209": 0,
+            "210": 0,
+            "211": 0,
+            "212": 0,
+            "213": 0,
+            "214": 0,
+            "215": 0,
+            "216": 0,
+            "217": 0,
+            "218": 0,
+            "219": 0,
+            "220": 0,
+            "221": 0,
+            "222": 0,
+            "223": 0,
+            "224": 0,
+            "225": 0,
+            "226": 0,
+            "227": 0,
+            "228": 0,
+            "229": 0,
+            "230": 0,
+            "231": 0,
+            "232": 0,
+            "233": 0,
+            "234": 0,
+            "235": 0,
+            "236": 0,
+            "237": 0,
+            "238": 0,
+            "239": 0,
+            "240": 0,
+            "241": 0,
+            "242": 0,
+            "243": 0,
+            "244": 0,
+            "245": 0,
+            "246": 0,
+            "247": 0,
+            "248": 0,
+            "249": 0,
+            "250": 0,
+            "251": 0,
+            "253": 0,
+            "254": 0,
+            "255": 0,
+            "256": 0,
+            "257": 0,
+            "258": 0,
+            "259": 0,
+            "260": 0,
+            "261": 0,
+            "262": 0,
+            "263": 0,
+            "264": 0,
+            "265": 0,
+            "266": 0,
+            "267": 0,
+            "268": 0,
+            "269": 0,
+            "270": 0,
+            "271": 0,
+            "272": 0,
+            "273": 0,
+            "274": 0,
+            "275": 0,
+            "276": 0,
+            "277": 0,
+            "279": 0,
+            "280": 0,
+            "281": 0,
+            "282": 0,
+            "283": 0,
+            "284": 0,
+            "285": 0,
+            "286": 0,
+            "287": 0,
+            "288": 0,
+            "289": 0,
+            "290": 0,
+            "291": 0,
+            "292": 0,
+            "293": 0,
+            "294": 0,
+            "295": 0,
+            "296": 0,
+            "297": 0,
+            "298": 0,
+            "299": 0,
+            "300": 0,
+            "301": 0,
+            "302": 0,
+            "303": 0,
+            "304": 0,
+            "305": 0,
+            "306": 0,
+            "308": 0,
+            "309": 0,
+            "310": 0,
+            "311": 0,
+            "312": 0,
+            "313": 0,
+            "314": 0,
+            "315": 0,
+            "316": 0,
+            "317": 0,
+            "318": 0,
+            "319": 0,
+            "320": 0,
+            "321": 0,
+            "322": 0,
+            "323": 0,
+            "324": 0,
+            "325": 0,
+            "326": 0,
+            "327": 0,
+            "328": 0,
+            "329": 0,
+            "330": 0,
+            "331": 0,
+            "332": 0,
+            "333": 0,
+            "334": 0,
+            "335": 0,
+            "336": 0,
+            "337": 0,
+            "338": 0,
+            "339": 0,
+            "340": 0,
+            "341": 0,
+            "342": 0,
+            "343": 0,
+            "344": 0,
+            "345": 0,
+            "346": 0,
+            "347": 0,
+            "348": 0,
+            "349": 0,
+            "350": 0,
+            "351": 0,
+            "352": 0,
+            "353": 0,
+            "354": 0,
+            "355": 0,
+            "356": 0,
+            "357": 0,
+            "358": 0,
+            "359": 0,
+            "360": 0,
+            "361": 0,
+            "362": 0,
+            "363": 0,
+            "364": 0,
+            "365": 0,
+            "366": 0,
+            "367": 0,
+            "368": 0,
+            "369": 0,
+            "370": 0,
+            "371": 0,
+            "372": 0,
+            "373": 0,
+            "374": 0,
+            "375": 0,
+            "376": 0,
+            "377": 0,
+            "378": 0,
+            "379": 0,
+            "380": 0,
+            "381": 0,
+            "382": 0,
+            "383": 0,
+            "384": 0,
+            "385": 0,
+            "386": 0,
+            "387": 0,
+            "388": 0,
+            "389": 0,
+            "390": 0,
+            "391": 0,
+            "392": 0,
+            "393": 0,
+            "394": 0,
+            "395": 0,
+            "396": 0,
+            "397": 0,
+            "398": 0,
+            "399": 0,
+            "400": 0,
+            "401": 0,
+            "402": 0,
+            "403": 0,
+            "404": 0,
+            "405": 0,
+            "406": 0,
+            "407": 0,
+            "408": 0,
+            "409": 0,
+            "410": 0,
+            "411": 0,
+            "412": 0,
+            "413": 0,
+            "414": 0,
+            "415": 0,
+            "416": 0,
+            "417": 0,
+            "418": 0,
+            "419": 0,
+            "420": 0,
+            "421": 0,
+            "422": 0,
+            "423": 0,
+            "424": 0,
+            "425": 0,
+            "426": 0,
+            "427": 0,
+            "428": 0,
+            "429": 0,
+            "430": 0,
+            "431": 0,
+            "432": 0,
+            "433": 0,
+            "434": 0,
+            "435": 0,
+            "436": 0,
+            "437": 0,
+            "438": 0,
+            "439": 0,
+            "440": 0,
+            "441": 0,
+            "442": 0,
+            "443": 0,
+            "444": 0,
+            "445": 0,
+            "446": 0,
+            "447": 0,
+            "448": 0,
+            "449": 0,
+            "450": 0,
+            "451": 0,
+            "452": 0,
+            "453": 0,
+            "454": 0,
+            "455": 0,
+            "456": 0,
+            "457": 0,
+            "458": 0,
+            "459": 0,
+            "460": 0,
+            "461": 0,
+            "462": 0,
+            "463": 0,
+            "464": 0,
+            "465": 0,
+            "466": 0,
+            "467": 0,
+            "468": 0,
+            "469": 0,
+            "470": 0,
+            "471": 0,
+            "472": 0,
+            "473": 0,
+            "474": 0,
+            "475": 0,
+            "476": 0,
+            "477": 0,
+            "478": 0,
+            "479": 0,
+            "480": 0,
+            "481": 0,
+            "482": 0,
+            "483": 0,
+            "484": 0,
+            "485": 0,
+            "486": 0,
+            "487": 0,
+            "488": 0,
+            "489": 0,
+            "490": 0,
+            "491": 0,
+            "492": 0,
+            "493": 0,
+            "494": 0,
+            "495": 0,
+            "497": 0,
+            "498": 0,
+            "499": 0,
+            "500": 0,
+            "501": 0,
+            "502": 0,
+            "503": 0,
+            "504": 0,
+            "505": 0,
+            "506": 0,
+            "507": 0,
+            "508": 0,
+            "509": 0,
+            "510": 0,
+            "511": 0,
+            "512": 0,
+            "513": 0,
+            "514": 0,
+            "515": 0,
+            "516": 0,
+            "517": 0,
+            "518": 0,
+            "519": 0,
+            "520": 0,
+            "521": 0,
+            "522": 0,
+            "523": 0,
+            "524": 0,
+            "525": 0,
+            "526": 0,
+            "527": 0,
+            "528": 0,
+            "529": 0,
+            "530": 0,
+            "531": 0,
+            "532": 0,
+            "533": 0,
+            "534": 0,
+            "535": 0,
+            "536": 0,
+            "537": 0,
+            "538": 0,
+            "539": 0,
+            "540": 0,
+            "541": 0,
+            "542": 0,
+            "543": 0,
+            "544": 0,
+            "545": 0,
+            "546": 0,
+            "547": 0,
+            "548": 0,
+            "549": 0,
+            "550": 0,
+            "551": 0,
+            "552": 0,
+            "553": 0,
+            "554": 0,
+            "555": 0,
+            "556": 0,
+            "557": 0,
+            "558": 0,
+            "559": 0,
+            "560": 0,
+            "561": 0,
+            "562": 0,
+            "563": 0,
+            "564": 0,
+            "565": 0,
+            "566": 0,
+            "567": 0,
+            "568": 0,
+            "569": 0,
+            "570": 0,
+            "571": 0,
+            "572": 0,
+            "573": 0,
+            "574": 0,
+            "575": 0,
+            "576": 0,
+            "577": 0,
+            "578": 0,
+            "579": 0,
+            "580": 0,
+            "581": 0,
+            "582": 0,
+            "583": 0,
+            "584": 0,
+            "585": 0,
+            "586": 0,
+            "587": 0,
+            "588": 0,
+            "589": 0,
+            "591": 0,
+            "592": 0,
+            "593": 0,
+            "594": 0,
+            "595": 0,
+            "596": 0,
+            "597": 0,
+            "598": 0,
+            "599": 0,
+            "600": 0,
+            "601": 0,
+            "602": 0,
+            "603": 0,
+            "604": 0,
+            "605": 0,
+            "606": 0,
+            "607": 0,
+            "608": 0,
+            "609": 0,
+            "610": 0,
+            "611": 0,
+            "612": 0,
+            "613": 0,
+            "615": 0,
+            "616": 0,
+            "617": 0,
+            "618": 0,
+            "619": 0,
+            "620": 0,
+            "621": 0,
+            "622": 0,
+            "623": 0,
+            "624": 0,
+            "625": 0,
+            "626": 0,
+            "627": 0,
+            "628": 0,
+            "629": 0,
+            "630": 0,
+            "631": 0,
+            "632": 0,
+            "633": 0,
+            "634": 0,
+            "635": 0,
+            "636": 0,
+            "637": 0,
+            "639": 0,
+            "640": 0,
+            "641": 0,
+            "642": 0,
+            "643": 0,
+            "644": 0,
+            "645": 0,
+            "646": 0,
+            "647": 0,
+            "648": 0,
+            "649": 0,
+            "650": 0,
+            "651": 0,
+            "652": 0,
+            "653": 0,
+            "654": 0,
+            "655": 0,
+            "656": 0,
+            "657": 0,
+            "658": 0,
+            "659": 0,
+            "660": 0,
+            "662": 0,
+            "663": 0,
+            "664": 0,
+            "665": 0,
+            "666": 0,
+            "667": 0,
+            "668": 0,
+            "669": 0,
+            "670": 0,
+            "671": 0,
+            "672": 0,
+            "673": 0,
+            "674": 0,
+            "675": 0,
+            "677": 0,
+            "678": 0,
+            "679": 0,
+            "680": 0,
+            "681": 0,
+            "682": 0,
+            "683": 0,
+            "684": 0,
+            "685": 0,
+            "686": 0,
+            "687": 0,
+            "688": 0,
+            "689": 0,
+            "690": 0,
+            "691": 0,
+            "692": 0,
+            "693": 0,
+            "694": 0,
+            "695": 0,
+            "696": 0,
+            "698": 0,
+            "699": 0,
+            "700": 0,
+            "701": 0,
+            "702": 0,
+            "703": 0,
+            "704": 0,
+            "705": 0,
+            "706": 0,
+            "707": 0,
+            "709": 0,
+            "710": 0,
+            "711": 0,
+            "712": 0,
+            "713": 0,
+            "714": 0,
+            "715": 0,
+            "716": 0,
+            "717": 0,
+            "718": 0,
+            "720": 0,
+            "721": 0,
+            "722": 0,
+            "723": 0,
+            "724": 0,
+            "725": 0,
+            "726": 0,
+            "727": 0,
+            "728": 0,
+            "729": 0,
+            "730": 0,
+            "731": 0,
+            "732": 0,
+            "733": 0,
+            "734": 0,
+            "735": 0,
+            "736": 0,
+            "737": 0,
+            "739": 0,
+            "740": 0,
+            "741": 0,
+            "742": 0,
+            "743": 0,
+            "744": 0,
+            "745": 0,
+            "746": 0,
+            "747": 0,
+            "748": 0,
+            "749": 0,
+            "750": 0,
+            "751": 0,
+            "752": 0,
+            "753": 0,
+            "754": 0,
+            "755": 0,
+            "756": 0,
+            "758": 0,
+            "759": 0,
+            "760": 0,
+            "761": 0,
+            "762": 0,
+            "763": 0,
+            "764": 0,
+            "765": 0,
+            "766": 0,
+            "767": 0,
+            "768": 0,
+            "769": 0,
+            "770": 0,
+            "771": 0,
+            "772": 0,
+            "773": 0,
+            "774": 0,
+            "775": 0,
+            "777": 0,
+            "778": 0,
+            "779": 0,
+            "780": 0,
+            "781": 0,
+            "782": 0,
+            "783": 0,
+            "784": 0,
+            "786": 0,
+            "787": 0,
+            "788": 0,
+            "789": 0,
+            "790": 0,
+            "791": 0,
+            "792": 0,
+            "793": 0,
+            "795": 0,
+            "796": 0,
+            "797": 0,
+            "798": 0,
+            "799": 0,
+            "800": 0,
+            "801": 0,
+            "802": 0,
+            "804": 0,
+            "805": 0,
+            "806": 0,
+            "807": 0,
+            "808": 0,
+            "809": 0,
+            "810": 0,
+            "811": 0,
+            "812": 0,
+            "813": 0,
+            "814": 0,
+            "815": 0,
+            "816": 0,
+            "817": 0,
+            "819": 0,
+            "820": 0,
+            "821": 0,
+            "822": 0,
+            "823": 0,
+            "824": 0,
+            "825": 0,
+            "826": 0,
+            "828": 0,
+            "829": 0,
+            "830": 0,
+            "831": 0,
+            "833": 0,
+            "834": 0,
+            "835": 0,
+            "836": 0,
+            "838": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Migrations\\DataContextModelSnapshot.cs": {
+      "DevInSales.Core.Migrations.DataContextModelSnapshot": {
+        "System.Void DevInSales.Core.Migrations.DataContextModelSnapshot::BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "17": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "23": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "163": 0,
+            "164": 0,
+            "165": 0,
+            "167": 0,
+            "168": 0,
+            "169": 0,
+            "170": 0,
+            "171": 0,
+            "172": 0,
+            "173": 0,
+            "174": 0,
+            "175": 0,
+            "176": 0,
+            "177": 0,
+            "178": 0,
+            "179": 0,
+            "180": 0,
+            "181": 0,
+            "182": 0,
+            "183": 0,
+            "184": 0,
+            "185": 0,
+            "186": 0,
+            "187": 0,
+            "188": 0,
+            "189": 0,
+            "190": 0,
+            "191": 0,
+            "192": 0,
+            "193": 0,
+            "194": 0,
+            "195": 0,
+            "196": 0,
+            "197": 0,
+            "198": 0,
+            "199": 0,
+            "200": 0,
+            "201": 0,
+            "202": 0,
+            "203": 0,
+            "204": 0,
+            "205": 0,
+            "206": 0,
+            "207": 0,
+            "208": 0,
+            "209": 0,
+            "210": 0,
+            "211": 0,
+            "212": 0,
+            "213": 0,
+            "214": 0,
+            "215": 0,
+            "216": 0,
+            "217": 0,
+            "218": 0,
+            "219": 0,
+            "220": 0,
+            "221": 0,
+            "222": 0,
+            "223": 0,
+            "224": 0,
+            "225": 0,
+            "226": 0,
+            "227": 0,
+            "228": 0,
+            "229": 0,
+            "230": 0,
+            "231": 0,
+            "232": 0,
+            "233": 0,
+            "234": 0,
+            "235": 0,
+            "236": 0,
+            "237": 0,
+            "238": 0,
+            "239": 0,
+            "240": 0,
+            "241": 0,
+            "242": 0,
+            "243": 0,
+            "244": 0,
+            "245": 0,
+            "246": 0,
+            "247": 0,
+            "248": 0,
+            "249": 0,
+            "251": 0,
+            "252": 0,
+            "253": 0,
+            "254": 0,
+            "255": 0,
+            "256": 0,
+            "257": 0,
+            "258": 0,
+            "259": 0,
+            "260": 0,
+            "261": 0,
+            "262": 0,
+            "263": 0,
+            "264": 0,
+            "265": 0,
+            "266": 0,
+            "267": 0,
+            "268": 0,
+            "269": 0,
+            "270": 0,
+            "271": 0,
+            "272": 0,
+            "273": 0,
+            "274": 0,
+            "275": 0,
+            "277": 0,
+            "278": 0,
+            "279": 0,
+            "280": 0,
+            "281": 0,
+            "282": 0,
+            "283": 0,
+            "284": 0,
+            "285": 0,
+            "286": 0,
+            "287": 0,
+            "288": 0,
+            "289": 0,
+            "290": 0,
+            "291": 0,
+            "292": 0,
+            "293": 0,
+            "294": 0,
+            "295": 0,
+            "296": 0,
+            "297": 0,
+            "298": 0,
+            "299": 0,
+            "300": 0,
+            "301": 0,
+            "302": 0,
+            "303": 0,
+            "304": 0,
+            "306": 0,
+            "307": 0,
+            "308": 0,
+            "309": 0,
+            "310": 0,
+            "311": 0,
+            "312": 0,
+            "313": 0,
+            "314": 0,
+            "315": 0,
+            "316": 0,
+            "317": 0,
+            "318": 0,
+            "319": 0,
+            "320": 0,
+            "321": 0,
+            "322": 0,
+            "323": 0,
+            "324": 0,
+            "325": 0,
+            "326": 0,
+            "327": 0,
+            "328": 0,
+            "329": 0,
+            "330": 0,
+            "331": 0,
+            "332": 0,
+            "333": 0,
+            "334": 0,
+            "335": 0,
+            "336": 0,
+            "337": 0,
+            "338": 0,
+            "339": 0,
+            "340": 0,
+            "341": 0,
+            "342": 0,
+            "343": 0,
+            "344": 0,
+            "345": 0,
+            "346": 0,
+            "347": 0,
+            "348": 0,
+            "349": 0,
+            "350": 0,
+            "351": 0,
+            "352": 0,
+            "353": 0,
+            "354": 0,
+            "355": 0,
+            "356": 0,
+            "357": 0,
+            "358": 0,
+            "359": 0,
+            "360": 0,
+            "361": 0,
+            "362": 0,
+            "363": 0,
+            "364": 0,
+            "365": 0,
+            "366": 0,
+            "367": 0,
+            "368": 0,
+            "369": 0,
+            "370": 0,
+            "371": 0,
+            "372": 0,
+            "373": 0,
+            "374": 0,
+            "375": 0,
+            "376": 0,
+            "377": 0,
+            "378": 0,
+            "379": 0,
+            "380": 0,
+            "381": 0,
+            "382": 0,
+            "383": 0,
+            "384": 0,
+            "385": 0,
+            "386": 0,
+            "387": 0,
+            "388": 0,
+            "389": 0,
+            "390": 0,
+            "391": 0,
+            "392": 0,
+            "393": 0,
+            "394": 0,
+            "395": 0,
+            "396": 0,
+            "397": 0,
+            "398": 0,
+            "399": 0,
+            "400": 0,
+            "401": 0,
+            "402": 0,
+            "403": 0,
+            "404": 0,
+            "405": 0,
+            "406": 0,
+            "407": 0,
+            "408": 0,
+            "409": 0,
+            "410": 0,
+            "411": 0,
+            "412": 0,
+            "413": 0,
+            "414": 0,
+            "415": 0,
+            "416": 0,
+            "417": 0,
+            "418": 0,
+            "419": 0,
+            "420": 0,
+            "421": 0,
+            "422": 0,
+            "423": 0,
+            "424": 0,
+            "425": 0,
+            "426": 0,
+            "427": 0,
+            "428": 0,
+            "429": 0,
+            "430": 0,
+            "431": 0,
+            "432": 0,
+            "433": 0,
+            "434": 0,
+            "435": 0,
+            "436": 0,
+            "437": 0,
+            "438": 0,
+            "439": 0,
+            "440": 0,
+            "441": 0,
+            "442": 0,
+            "443": 0,
+            "444": 0,
+            "445": 0,
+            "446": 0,
+            "447": 0,
+            "448": 0,
+            "449": 0,
+            "450": 0,
+            "451": 0,
+            "452": 0,
+            "453": 0,
+            "454": 0,
+            "455": 0,
+            "456": 0,
+            "457": 0,
+            "458": 0,
+            "459": 0,
+            "460": 0,
+            "461": 0,
+            "462": 0,
+            "463": 0,
+            "464": 0,
+            "465": 0,
+            "466": 0,
+            "467": 0,
+            "468": 0,
+            "469": 0,
+            "470": 0,
+            "471": 0,
+            "472": 0,
+            "473": 0,
+            "474": 0,
+            "475": 0,
+            "476": 0,
+            "477": 0,
+            "478": 0,
+            "479": 0,
+            "480": 0,
+            "481": 0,
+            "482": 0,
+            "483": 0,
+            "484": 0,
+            "485": 0,
+            "486": 0,
+            "487": 0,
+            "488": 0,
+            "489": 0,
+            "490": 0,
+            "491": 0,
+            "492": 0,
+            "493": 0,
+            "495": 0,
+            "496": 0,
+            "497": 0,
+            "498": 0,
+            "499": 0,
+            "500": 0,
+            "501": 0,
+            "502": 0,
+            "503": 0,
+            "504": 0,
+            "505": 0,
+            "506": 0,
+            "507": 0,
+            "508": 0,
+            "509": 0,
+            "510": 0,
+            "511": 0,
+            "512": 0,
+            "513": 0,
+            "514": 0,
+            "515": 0,
+            "516": 0,
+            "517": 0,
+            "518": 0,
+            "519": 0,
+            "520": 0,
+            "521": 0,
+            "522": 0,
+            "523": 0,
+            "524": 0,
+            "525": 0,
+            "526": 0,
+            "527": 0,
+            "528": 0,
+            "529": 0,
+            "530": 0,
+            "531": 0,
+            "532": 0,
+            "533": 0,
+            "534": 0,
+            "535": 0,
+            "536": 0,
+            "537": 0,
+            "538": 0,
+            "539": 0,
+            "540": 0,
+            "541": 0,
+            "542": 0,
+            "543": 0,
+            "544": 0,
+            "545": 0,
+            "546": 0,
+            "547": 0,
+            "548": 0,
+            "549": 0,
+            "550": 0,
+            "551": 0,
+            "552": 0,
+            "553": 0,
+            "554": 0,
+            "555": 0,
+            "556": 0,
+            "557": 0,
+            "558": 0,
+            "559": 0,
+            "560": 0,
+            "561": 0,
+            "562": 0,
+            "563": 0,
+            "564": 0,
+            "565": 0,
+            "566": 0,
+            "567": 0,
+            "568": 0,
+            "569": 0,
+            "570": 0,
+            "571": 0,
+            "572": 0,
+            "573": 0,
+            "574": 0,
+            "575": 0,
+            "576": 0,
+            "577": 0,
+            "578": 0,
+            "579": 0,
+            "580": 0,
+            "581": 0,
+            "582": 0,
+            "583": 0,
+            "584": 0,
+            "585": 0,
+            "586": 0,
+            "587": 0,
+            "589": 0,
+            "590": 0,
+            "591": 0,
+            "592": 0,
+            "593": 0,
+            "594": 0,
+            "595": 0,
+            "596": 0,
+            "597": 0,
+            "598": 0,
+            "599": 0,
+            "600": 0,
+            "601": 0,
+            "602": 0,
+            "603": 0,
+            "604": 0,
+            "605": 0,
+            "606": 0,
+            "607": 0,
+            "608": 0,
+            "609": 0,
+            "610": 0,
+            "611": 0,
+            "613": 0,
+            "614": 0,
+            "615": 0,
+            "616": 0,
+            "617": 0,
+            "618": 0,
+            "619": 0,
+            "620": 0,
+            "621": 0,
+            "622": 0,
+            "623": 0,
+            "624": 0,
+            "625": 0,
+            "626": 0,
+            "627": 0,
+            "628": 0,
+            "629": 0,
+            "630": 0,
+            "631": 0,
+            "632": 0,
+            "633": 0,
+            "634": 0,
+            "635": 0,
+            "637": 0,
+            "638": 0,
+            "639": 0,
+            "640": 0,
+            "641": 0,
+            "642": 0,
+            "643": 0,
+            "644": 0,
+            "645": 0,
+            "646": 0,
+            "647": 0,
+            "648": 0,
+            "649": 0,
+            "650": 0,
+            "651": 0,
+            "652": 0,
+            "653": 0,
+            "654": 0,
+            "655": 0,
+            "656": 0,
+            "657": 0,
+            "658": 0,
+            "660": 0,
+            "661": 0,
+            "662": 0,
+            "663": 0,
+            "664": 0,
+            "665": 0,
+            "666": 0,
+            "667": 0,
+            "668": 0,
+            "669": 0,
+            "670": 0,
+            "671": 0,
+            "672": 0,
+            "673": 0,
+            "675": 0,
+            "676": 0,
+            "677": 0,
+            "678": 0,
+            "679": 0,
+            "680": 0,
+            "681": 0,
+            "682": 0,
+            "683": 0,
+            "684": 0,
+            "685": 0,
+            "686": 0,
+            "687": 0,
+            "688": 0,
+            "689": 0,
+            "690": 0,
+            "691": 0,
+            "692": 0,
+            "693": 0,
+            "694": 0,
+            "696": 0,
+            "697": 0,
+            "698": 0,
+            "699": 0,
+            "700": 0,
+            "701": 0,
+            "702": 0,
+            "703": 0,
+            "704": 0,
+            "705": 0,
+            "707": 0,
+            "708": 0,
+            "709": 0,
+            "710": 0,
+            "711": 0,
+            "712": 0,
+            "713": 0,
+            "714": 0,
+            "715": 0,
+            "716": 0,
+            "718": 0,
+            "719": 0,
+            "720": 0,
+            "721": 0,
+            "722": 0,
+            "723": 0,
+            "724": 0,
+            "725": 0,
+            "726": 0,
+            "727": 0,
+            "728": 0,
+            "729": 0,
+            "730": 0,
+            "731": 0,
+            "732": 0,
+            "733": 0,
+            "734": 0,
+            "735": 0,
+            "737": 0,
+            "738": 0,
+            "739": 0,
+            "740": 0,
+            "741": 0,
+            "742": 0,
+            "743": 0,
+            "744": 0,
+            "745": 0,
+            "746": 0,
+            "747": 0,
+            "748": 0,
+            "749": 0,
+            "750": 0,
+            "751": 0,
+            "752": 0,
+            "753": 0,
+            "754": 0,
+            "756": 0,
+            "757": 0,
+            "758": 0,
+            "759": 0,
+            "760": 0,
+            "761": 0,
+            "762": 0,
+            "763": 0,
+            "764": 0,
+            "765": 0,
+            "766": 0,
+            "767": 0,
+            "768": 0,
+            "769": 0,
+            "770": 0,
+            "771": 0,
+            "772": 0,
+            "773": 0,
+            "775": 0,
+            "776": 0,
+            "777": 0,
+            "778": 0,
+            "779": 0,
+            "780": 0,
+            "781": 0,
+            "782": 0,
+            "784": 0,
+            "785": 0,
+            "786": 0,
+            "787": 0,
+            "788": 0,
+            "789": 0,
+            "790": 0,
+            "791": 0,
+            "793": 0,
+            "794": 0,
+            "795": 0,
+            "796": 0,
+            "797": 0,
+            "798": 0,
+            "799": 0,
+            "800": 0,
+            "802": 0,
+            "803": 0,
+            "804": 0,
+            "805": 0,
+            "806": 0,
+            "807": 0,
+            "808": 0,
+            "809": 0,
+            "810": 0,
+            "811": 0,
+            "812": 0,
+            "813": 0,
+            "814": 0,
+            "815": 0,
+            "817": 0,
+            "818": 0,
+            "819": 0,
+            "820": 0,
+            "821": 0,
+            "822": 0,
+            "823": 0,
+            "824": 0,
+            "826": 0,
+            "827": 0,
+            "828": 0,
+            "829": 0,
+            "831": 0,
+            "832": 0,
+            "833": 0,
+            "834": 0,
+            "836": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Entities\\Address.cs": {
+      "DevInSales.Core.Entities.Address": {
+        "System.Int32 DevInSales.Core.Entities.Address::get_CityId()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.Entities.Address::get_Street()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.Entities.Address::get_Cep()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 DevInSales.Core.Entities.Address::get_Number()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.Entities.Address::get_Complement()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Entities.City DevInSales.Core.Entities.Address::get_City()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Entities.Address::.ctor(System.String,System.String,System.Int32,System.String,System.Int32)": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Entities\\City.cs": {
+      "DevInSales.Core.Entities.City": {
+        "System.Int32 DevInSales.Core.Entities.City::get_StateId()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.Entities.City::get_Name()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Entities.State DevInSales.Core.Entities.City::get_State()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<DevInSales.Core.Entities.Address> DevInSales.Core.Entities.City::get_Addresses()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Entities.City::.ctor(System.Int32,System.String)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Entities\\Delivery.cs": {
+      "DevInSales.Core.Entities.Delivery": {
+        "System.Int32 DevInSales.Core.Entities.Delivery::get_AddressId()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 DevInSales.Core.Entities.Delivery::get_SaleId()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime DevInSales.Core.Entities.Delivery::get_DeliveryForecast()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Entities.Sale DevInSales.Core.Entities.Delivery::get_Sale()": {
+          "Lines": {
+            "21": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Entities.Address DevInSales.Core.Entities.Delivery::get_Address()": {
+          "Lines": {
+            "22": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Entities.Delivery::.ctor(System.Int32,System.Int32,System.DateTime)": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Entities\\Product.cs": {
+      "DevInSales.Core.Entities.Product": {
+        "System.Void DevInSales.Core.Entities.Product::AtualizarDados(System.String,System.Decimal)": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.Entities.Product::get_Name()": {
+          "Lines": {
+            "31": 10
+          },
+          "Branches": []
+        },
+        "System.Decimal DevInSales.Core.Entities.Product::get_SuggestedPrice()": {
+          "Lines": {
+            "36": 10
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Entities.Product::.ctor(System.String,System.Decimal)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Entities.Product::.ctor(System.Int32,System.String,System.Decimal)": {
+          "Lines": {
+            "17": 10,
+            "18": 10,
+            "19": 10,
+            "20": 10,
+            "21": 10,
+            "22": 10
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Entities\\Role.cs": {
+      "DevInSales.Core.Entities.Role": {
+        "System.Void DevInSales.Core.Entities.Role::.ctor(Microsoft.AspNetCore.Identity.IRoleStore`1<DevInSales.Core.Entities.ApplicationRole>,System.Collections.Generic.IEnumerable`1<Microsoft.AspNetCore.Identity.IRoleValidator`1<DevInSales.Core.Entities.ApplicationRole>>,Microsoft.AspNetCore.Identity.ILookupNormalizer,Microsoft.AspNetCore.Identity.IdentityErrorDescriber,Microsoft.Extensions.Logging.ILogger`1<Microsoft.AspNetCore.Identity.RoleManager`1<DevInSales.Core.Entities.ApplicationRole>>)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Entities\\Sale.cs": {
+      "DevInSales.Core.Entities.Sale": {
+        "System.Int32 DevInSales.Core.Entities.Sale::get_BuyerId()": {
+          "Lines": {
+            "18": 19
+          },
+          "Branches": []
+        },
+        "System.Int32 DevInSales.Core.Entities.Sale::get_SellerId()": {
+          "Lines": {
+            "19": 16
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Entities.Sale::SetSaleDateToToday()": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime DevInSales.Core.Entities.Sale::get_SaleDate()": {
+          "Lines": {
+            "26": 17
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Entities.User DevInSales.Core.Entities.Sale::get_Buyer()": {
+          "Lines": {
+            "29": 1
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Entities.User DevInSales.Core.Entities.Sale::get_Seller()": {
+          "Lines": {
+            "31": 1
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Entities.Sale::.ctor(System.Int32,System.Int32,System.DateTime)": {
+          "Lines": {
+            "12": 10,
+            "13": 10,
+            "14": 10,
+            "15": 10,
+            "16": 10,
+            "17": 10
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Entities\\SaleProduct.cs": {
+      "DevInSales.Core.Entities.SaleProduct": {
+        "System.Int32 DevInSales.Core.Entities.SaleProduct::get_SaleId()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 DevInSales.Core.Entities.SaleProduct::get_ProductId()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal DevInSales.Core.Entities.SaleProduct::get_UnitPrice()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 DevInSales.Core.Entities.SaleProduct::get_Amount()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Entities.Sale DevInSales.Core.Entities.SaleProduct::get_Sales()": {
+          "Lines": {
+            "17": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Entities.Product DevInSales.Core.Entities.SaleProduct::get_Products()": {
+          "Lines": {
+            "18": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Entities.SaleProduct::UpdateUnitPrice(System.Decimal)": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Entities.SaleProduct::UpdateAmount(System.Int32)": {
+          "Lines": {
+            "26": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Entities.SaleProduct::.ctor(System.Int32,System.Int32,System.Decimal,System.Int32)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Entities\\Shared\\Entity.cs": {
+      "DevInSales.Core.Entities.Entity": {
+        "System.Int32 DevInSales.Core.Entities.Entity::get_Id()": {
+          "Lines": {
+            "5": 64
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Entities\\Sign.cs": {
+      "DevInSales.Core.Entities.Sign": {
+        "System.Void DevInSales.Core.Entities.Sign::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<DevInSales.Core.Entities.User>,Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory`1<DevInSales.Core.Entities.User>,Microsoft.Extensions.Options.IOptions`1<Microsoft.AspNetCore.Identity.IdentityOptions>,Microsoft.Extensions.Logging.ILogger`1<Microsoft.AspNetCore.Identity.SignInManager`1<DevInSales.Core.Entities.User>>,Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider,Microsoft.AspNetCore.Identity.IUserConfirmation`1<DevInSales.Core.Entities.User>)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Entities\\State.cs": {
+      "DevInSales.Core.Entities.State": {
+        "System.String DevInSales.Core.Entities.State::get_Name()": {
+          "Lines": {
+            "5": 52
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.Entities.State::get_Initials()": {
+          "Lines": {
+            "6": 51
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<DevInSales.Core.Entities.City> DevInSales.Core.Entities.State::get_Cities()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Entities.State::.ctor(System.Int32,System.String,System.String)": {
+          "Lines": {
+            "9": 45,
+            "10": 45,
+            "11": 45,
+            "12": 45,
+            "13": 45,
+            "14": 45
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Entities\\User.cs": {
+      "DevInSales.Core.Entities.User": {
+        "System.String DevInSales.Core.Entities.User::get_Name()": {
+          "Lines": {
+            "7": 39
+          },
+          "Branches": []
+        },
+        "System.DateTime DevInSales.Core.Entities.User::get_BirthDate()": {
+          "Lines": {
+            "8": 37
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Entities\\UserManager.cs": {
+      "DevInSales.Core.Entities.UserManager": {
+        "System.Void DevInSales.Core.Entities.UserManager::.ctor(Microsoft.AspNetCore.Identity.IUserStore`1<DevInSales.Core.Entities.User>,Microsoft.Extensions.Options.IOptions`1<Microsoft.AspNetCore.Identity.IdentityOptions>,Microsoft.AspNetCore.Identity.IPasswordHasher`1<DevInSales.Core.Entities.User>,System.Collections.Generic.IEnumerable`1<Microsoft.AspNetCore.Identity.IUserValidator`1<DevInSales.Core.Entities.User>>,System.Collections.Generic.IEnumerable`1<Microsoft.AspNetCore.Identity.IPasswordValidator`1<DevInSales.Core.Entities.User>>,Microsoft.AspNetCore.Identity.ILookupNormalizer,Microsoft.AspNetCore.Identity.IdentityErrorDescriber,System.IServiceProvider,Microsoft.Extensions.Logging.ILogger`1<Microsoft.AspNetCore.Identity.UserManager`1<DevInSales.Core.Entities.User>>)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Services\\UserService.cs": {
+      "DevInSales.Core.Entities.UserService": {
+        "System.Collections.Generic.List`1<DevInSales.Core.Entities.User> DevInSales.Core.Entities.UserService::ObterUsers(System.String,System.String,System.String)": {
+          "Lines": {
+            "91": 7,
+            "92": 7,
+            "93": 7,
+            "94": 2,
+            "95": 7,
+            "96": 3,
+            "97": 7,
+            "98": 3,
+            "100": 7,
+            "101": 7
+          },
+          "Branches": [
+            {
+              "Line": 93,
+              "Offset": 61,
+              "EndOffset": 66,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 93,
+              "Offset": 61,
+              "EndOffset": 240,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 7
+            },
+            {
+              "Line": 95,
+              "Offset": 258,
+              "EndOffset": 263,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 3
+            },
+            {
+              "Line": 95,
+              "Offset": 258,
+              "EndOffset": 409,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 7
+            },
+            {
+              "Line": 97,
+              "Offset": 427,
+              "EndOffset": 432,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 3
+            },
+            {
+              "Line": 97,
+              "Offset": 427,
+              "EndOffset": 578,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 7
+            }
+          ]
+        },
+        "System.Void DevInSales.Core.Entities.UserService::RemoverUser(System.Int32)": {
+          "Lines": {
+            "104": 3,
+            "105": 3,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "113": 3,
+            "114": 0
+          },
+          "Branches": [
+            {
+              "Line": 105,
+              "Offset": 25,
+              "EndOffset": 30,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 108,
+              "Offset": 154,
+              "EndOffset": 156,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 108,
+              "Offset": 154,
+              "EndOffset": 174,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 105,
+              "Offset": 25,
+              "EndOffset": 188,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 3
+            }
+          ]
+        },
+        "System.Void DevInSales.Core.Entities.UserService::.ctor(DevInSales.Core.Interfaces.IUserManager`1<DevInSales.Core.Entities.User>,DevInSales.Core.Interfaces.ISignInManager,DevInSales.Core.Interfaces.IRoleManager,DevInSales.Core.Interfaces.ITokenService,DevInSales.Core.Data.Context.DataContext)": {
+          "Lines": {
+            "19": 14,
+            "20": 14,
+            "21": 14,
+            "22": 14,
+            "23": 14,
+            "24": 14,
+            "25": 14,
+            "26": 14,
+            "27": 14,
+            "28": 14,
+            "29": 14,
+            "30": 14
+          },
+          "Branches": []
+        }
+      },
+      "DevInSales.Core.Entities.UserService/<>c": {
+        "System.String DevInSales.Core.Entities.UserService/<>c::<CriarUser>b__6_0(Microsoft.AspNetCore.Identity.IdentityError)": {
+          "Lines": {
+            "56": 0
+          },
+          "Branches": []
+        }
+      },
+      "DevInSales.Core.Entities.UserService/<CriarUser>d__6": {
+        "System.Void DevInSales.Core.Entities.UserService/<CriarUser>d__6::MoveNext()": {
+          "Lines": {
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "43": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "49": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "55": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0
+          },
+          "Branches": [
+            {
+              "Line": 45,
+              "Offset": 336,
+              "EndOffset": 341,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 46,
+              "Offset": 509,
+              "EndOffset": 514,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 46,
+              "Offset": 509,
+              "EndOffset": 674,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 45,
+              "Offset": 336,
+              "EndOffset": 911,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 55,
+              "Offset": 944,
+              "EndOffset": 946,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 55,
+              "Offset": 944,
+              "EndOffset": 967,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 55,
+              "Offset": 972,
+              "EndOffset": 974,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 55,
+              "Offset": 972,
+              "EndOffset": 1035,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "DevInSales.Core.Entities.UserService/<LogarUser>d__7": {
+        "System.Void DevInSales.Core.Entities.UserService/<LogarUser>d__7::MoveNext()": {
+          "Lines": {
+            "61": 0,
+            "63": 0,
+            "65": 0,
+            "67": 0,
+            "68": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "79": 0,
+            "80": 0,
+            "82": 0
+          },
+          "Branches": [
+            {
+              "Line": 65,
+              "Offset": 199,
+              "EndOffset": 201,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 65,
+              "Offset": 199,
+              "EndOffset": 205,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 65,
+              "Offset": 211,
+              "EndOffset": 213,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 65,
+              "Offset": 211,
+              "EndOffset": 219,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 67,
+              "Offset": 369,
+              "EndOffset": 374,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 67,
+              "Offset": 369,
+              "EndOffset": 512,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 72,
+              "Offset": 539,
+              "EndOffset": 541,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 72,
+              "Offset": 539,
+              "EndOffset": 560,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 74,
+              "Offset": 575,
+              "EndOffset": 577,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 74,
+              "Offset": 575,
+              "EndOffset": 596,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 76,
+              "Offset": 611,
+              "EndOffset": 613,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 76,
+              "Offset": 611,
+              "EndOffset": 632,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "DevInSales.Core.Entities.UserService/<ObterPorId>d__8": {
+        "System.Void DevInSales.Core.Entities.UserService/<ObterPorId>d__8::MoveNext()": {
+          "Lines": {
+            "86": 6,
+            "87": 6,
+            "88": 6
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\DTOs\\UserCadastroResponse.cs": {
+      "DevInSales.Core.DTOs.UserCadastroResponse": {
+        "System.Collections.Generic.List`1<System.String> DevInSales.Core.DTOs.UserCadastroResponse::get_Erros()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean DevInSales.Core.DTOs.UserCadastroResponse::get_Sucess()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.DTOs.UserCadastroResponse::AdicionarErros(System.Collections.Generic.IEnumerable`1<System.String>)": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.DTOs.UserCadastroResponse::.ctor(System.Boolean)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\DTOs\\UserLoginRequest.cs": {
+      "DevInSales.Core.DTOs.UserLoginRequest": {
+        "System.String DevInSales.Core.DTOs.UserLoginRequest::get_Email()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.DTOs.UserLoginRequest::get_Password()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\DTOs\\UserLoginResponse.cs": {
+      "DevInSales.Core.DTOs.UserLoginResponse": {
+        "System.Boolean DevInSales.Core.DTOs.UserLoginResponse::get_Sucess()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.DTOs.UserLoginResponse::get_Token()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.DTOs.UserLoginResponse::get_Erro()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\DTOs\\UserRequest.cs": {
+      "DevInSales.Core.DTOs.UserRequest": {
+        "System.String DevInSales.Core.DTOs.UserRequest::get_Name()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime DevInSales.Core.DTOs.UserRequest::get_BirthDate()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.DTOs.UserRequest::get_Email()": {
+          "Lines": {
+            "19": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.DTOs.UserRequest::get_UserName()": {
+          "Lines": {
+            "23": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.DTOs.UserRequest::get_Password()": {
+          "Lines": {
+            "27": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.DTOs.UserRequest::get_SamePassword()": {
+          "Lines": {
+            "31": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.DTOs.UserRequest::get_Role()": {
+          "Lines": {
+            "33": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\DTOs\\UserResponse.cs": {
+      "DevInSales.Core.DTOs.UserResponse": {
+        "System.Int32 DevInSales.Core.DTOs.UserResponse::get_Id()": {
+          "Lines": {
+            "16": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.DTOs.UserResponse::get_Nome()": {
+          "Lines": {
+            "17": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.DTOs.UserResponse::get_UserName()": {
+          "Lines": {
+            "18": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.DTOs.UserResponse::get_Email()": {
+          "Lines": {
+            "19": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.DTOs.UserResponse::get_BirthDate()": {
+          "Lines": {
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.DTOs.UserResponse::.ctor(System.Int32,System.String,System.String,System.String,System.DateTime)": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Mappings\\AddressMap.cs": {
+      "DevInSales.Core.Data.Mappings.AddressMap": {
+        "System.Void DevInSales.Core.Data.Mappings.AddressMap::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<DevInSales.Core.Entities.Address>)": {
+          "Lines": {
+            "16": 1,
+            "17": 1,
+            "19": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "31": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1,
+            "36": 1,
+            "37": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Mappings\\CityMap.cs": {
+      "DevInSales.Core.Data.Mappings.CityMap": {
+        "System.Void DevInSales.Core.Data.Mappings.CityMap::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<DevInSales.Core.Entities.City>)": {
+          "Lines": {
+            "15": 1,
+            "16": 1,
+            "18": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Mappings\\DeliveryMap.cs": {
+      "DevInSales.Core.Data.Mappings.DeliveryMap": {
+        "System.Void DevInSales.Core.Data.Mappings.DeliveryMap::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<DevInSales.Core.Entities.Delivery>)": {
+          "Lines": {
+            "10": 1,
+            "11": 1,
+            "14": 1,
+            "16": 1,
+            "17": 1,
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Mappings\\ProductMap.cs": {
+      "DevInSales.Core.Data.Mappings.ProductMap": {
+        "System.Void DevInSales.Core.Data.Mappings.ProductMap::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<DevInSales.Core.Entities.Product>)": {
+          "Lines": {
+            "9": 1,
+            "10": 1,
+            "13": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1,
+            "31": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1,
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Mappings\\RolesMapping.cs": {
+      "DevInSales.Core.Data.Mappings.RolesMapping": {
+        "System.Void DevInSales.Core.Data.Mappings.RolesMapping::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<DevInSales.Core.Entities.ApplicationRole>)": {
+          "Lines": {
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "20": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Mappings\\SaleMap.cs": {
+      "DevInSales.Core.Data.Mappings.SaleMap": {
+        "System.Void DevInSales.Core.Data.Mappings.SaleMap::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<DevInSales.Core.Entities.Sale>)": {
+          "Lines": {
+            "10": 1,
+            "11": 1,
+            "14": 1,
+            "16": 1,
+            "17": 1,
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Mappings\\SaleProductMap.cs": {
+      "DevInSales.Core.Data.Mappings.SaleProductMap": {
+        "System.Void DevInSales.Core.Data.Mappings.SaleProductMap::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<DevInSales.Core.Entities.SaleProduct>)": {
+          "Lines": {
+            "10": 1,
+            "11": 1,
+            "14": 1,
+            "16": 1,
+            "17": 1,
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Mappings\\StateMap.cs": {
+      "DevInSales.Core.Data.Mappings.StateMap": {
+        "System.Void DevInSales.Core.Data.Mappings.StateMap::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<DevInSales.Core.Entities.State>)": {
+          "Lines": {
+            "15": 1,
+            "16": 1,
+            "18": 1,
+            "20": 1,
+            "22": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1,
+            "31": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1,
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "44": 1,
+            "45": 1,
+            "46": 1,
+            "47": 1,
+            "48": 1,
+            "49": 1,
+            "50": 1,
+            "51": 1,
+            "52": 1,
+            "53": 1,
+            "54": 1,
+            "55": 1,
+            "56": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Mappings\\UserMap.cs": {
+      "DevInSales.Core.Data.Mappings.UserMap": {
+        "System.Void DevInSales.Core.Data.Mappings.UserMap::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<DevInSales.Core.Entities.User>)": {
+          "Lines": {
+            "11": 1,
+            "12": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "18": 1,
+            "19": 1,
+            "20": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1,
+            "31": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1,
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "43": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Dtos\\DeliveryRequest.cs": {
+      "DevInSales.Core.Data.Dtos.DeliveryRequest": {
+        "System.Int32 DevInSales.Core.Data.Dtos.DeliveryRequest::get_AddressId()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime DevInSales.Core.Data.Dtos.DeliveryRequest::get_DeliveryForecast()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Entities.Delivery DevInSales.Core.Data.Dtos.DeliveryRequest::ConvertToEntity(System.Int32)": {
+          "Lines": {
+            "23": 0,
+            "24": 0,
+            "25": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Data.Dtos.DeliveryRequest::.ctor(System.Int32,System.DateTime)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Dtos\\ReadAddress.cs": {
+      "DevInSales.Core.Data.Dtos.ReadAddress": {
+        "System.Int32 DevInSales.Core.Data.Dtos.ReadAddress::get_Id()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.Data.Dtos.ReadAddress::get_Street()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.Data.Dtos.ReadAddress::get_Cep()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 DevInSales.Core.Data.Dtos.ReadAddress::get_Number()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.Data.Dtos.ReadAddress::get_Complement()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Data.Dtos.ReadAddressCity DevInSales.Core.Data.Dtos.ReadAddress::get_City()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Data.Dtos.ReadCityState DevInSales.Core.Data.Dtos.ReadAddress::get_State()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Data.Dtos.ReadAddress DevInSales.Core.Data.Dtos.ReadAddress::AddressToReadAddress(DevInSales.Core.Entities.Address)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0
+          },
+          "Branches": [
+            {
+              "Line": 17,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 7,
+              "EndOffset": 16,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Dtos\\ReadAddressCity.cs": {
+      "DevInSales.Core.Data.Dtos.ReadAddressCity": {
+        "System.Int32 DevInSales.Core.Data.Dtos.ReadAddressCity::get_Id()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.Data.Dtos.ReadAddressCity::get_Name()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Dtos\\ReadCity.cs": {
+      "DevInSales.Core.Data.Dtos.ReadCity": {
+        "System.Int32 DevInSales.Core.Data.Dtos.ReadCity::get_Id()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.Data.Dtos.ReadCity::get_Name()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Data.Dtos.ReadCityState DevInSales.Core.Data.Dtos.ReadCity::get_State()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Data.Dtos.ReadCity DevInSales.Core.Data.Dtos.ReadCity::CityToReadCity(DevInSales.Core.Entities.City)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0
+          },
+          "Branches": [
+            {
+              "Line": 12,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 12,
+              "Offset": 7,
+              "EndOffset": 13,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Dtos\\ReadCityState.cs": {
+      "DevInSales.Core.Data.Dtos.ReadCityState": {
+        "System.Int32 DevInSales.Core.Data.Dtos.ReadCityState::get_Id()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.Data.Dtos.ReadCityState::get_Name()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.Data.Dtos.ReadCityState::get_Initials()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Dtos\\ReadState.cs": {
+      "DevInSales.Core.Data.Dtos.ReadState": {
+        "System.Int32 DevInSales.Core.Data.Dtos.ReadState::get_Id()": {
+          "Lines": {
+            "7": 6
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.Data.Dtos.ReadState::get_Name()": {
+          "Lines": {
+            "8": 9
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.Data.Dtos.ReadState::get_Initials()": {
+          "Lines": {
+            "9": 6
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Data.Dtos.ReadState DevInSales.Core.Data.Dtos.ReadState::StateToReadState(DevInSales.Core.Entities.State)": {
+          "Lines": {
+            "12": 9,
+            "13": 9,
+            "14": 3,
+            "15": 6,
+            "16": 6,
+            "17": 6,
+            "18": 6,
+            "19": 6,
+            "20": 6,
+            "21": 9
+          },
+          "Branches": [
+            {
+              "Line": 13,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 3
+            },
+            {
+              "Line": 13,
+              "Offset": 7,
+              "EndOffset": 13,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Dtos\\SaleByBuyerRequest.cs": {
+      "DevInSales.Core.Data.Dtos.SaleByBuyerRequest": {
+        "System.Int32 DevInSales.Core.Data.Dtos.SaleByBuyerRequest::get_SellerId()": {
+          "Lines": {
+            "18": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime DevInSales.Core.Data.Dtos.SaleByBuyerRequest::get_SaleDate()": {
+          "Lines": {
+            "19": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Entities.Sale DevInSales.Core.Data.Dtos.SaleByBuyerRequest::ConvertToEntity(System.Int32)": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Data.Dtos.SaleByBuyerRequest::.ctor(System.Int32,System.DateTime)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Dtos\\SaleBySellerRequest.cs": {
+      "DevInSales.Core.Data.Dtos.SaleBySellerRequest": {
+        "System.Int32 DevInSales.Core.Data.Dtos.SaleBySellerRequest::get_BuyerId()": {
+          "Lines": {
+            "18": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime DevInSales.Core.Data.Dtos.SaleBySellerRequest::get_SaleDate()": {
+          "Lines": {
+            "19": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Entities.Sale DevInSales.Core.Data.Dtos.SaleBySellerRequest::ConvertToEntity(System.Int32)": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Data.Dtos.SaleBySellerRequest::.ctor(System.Int32,System.DateTime)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Dtos\\SaleProductRequest.cs": {
+      "DevInSales.Core.Data.Dtos.SaleProductRequest": {
+        "System.Int32 DevInSales.Core.Data.Dtos.SaleProductRequest::get_ProductId()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Decimal> DevInSales.Core.Data.Dtos.SaleProductRequest::get_UnitPrice()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Int32> DevInSales.Core.Data.Dtos.SaleProductRequest::get_Amount()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "DevInSales.Core.Entities.SaleProduct DevInSales.Core.Data.Dtos.SaleProductRequest::ConvertIntoSaleProduct(System.Int32)": {
+          "Lines": {
+            "27": 0,
+            "29": 0,
+            "31": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Data.Dtos.SaleProductRequest::.ctor(System.Int32,System.Nullable`1<System.Decimal>,System.Nullable`1<System.Int32>)": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Dtos\\SaleProductResponse.cs": {
+      "DevInSales.Core.Data.Dtos.SaleProductResponse": {
+        "System.String DevInSales.Core.Data.Dtos.SaleProductResponse::get_ProductName()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 DevInSales.Core.Data.Dtos.SaleProductResponse::get_Amount()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal DevInSales.Core.Data.Dtos.SaleProductResponse::get_UnitPrice()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal DevInSales.Core.Data.Dtos.SaleProductResponse::get_Total()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Data.Dtos.SaleProductResponse::.ctor(System.String,System.Int32,System.Decimal,System.Decimal)": {
+          "Lines": {
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Dtos\\SaleResponse.cs": {
+      "DevInSales.Core.Data.Dtos.SaleResponse": {
+        "System.Int32 DevInSales.Core.Data.Dtos.SaleResponse::get_SaleId()": {
+          "Lines": {
+            "11": 2
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.Data.Dtos.SaleResponse::get_SellerName()": {
+          "Lines": {
+            "12": 1
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.Data.Dtos.SaleResponse::get_BuyerName()": {
+          "Lines": {
+            "13": 1
+          },
+          "Branches": []
+        },
+        "System.DateTime DevInSales.Core.Data.Dtos.SaleResponse::get_SaleDate()": {
+          "Lines": {
+            "14": 1
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<DevInSales.Core.Data.Dtos.SaleProductResponse> DevInSales.Core.Data.Dtos.SaleResponse::get_SaleProducts()": {
+          "Lines": {
+            "15": 1
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Data.Dtos.SaleResponse::.ctor(System.Int32,System.String,System.String,System.DateTime,System.Collections.Generic.List`1<DevInSales.Core.Data.Dtos.SaleProductResponse>)": {
+          "Lines": {
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Data\\Context\\DataContext.cs": {
+      "DevInSales.Core.Data.Context.DataContext": {
+        "System.Void DevInSales.Core.Data.Context.DataContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "14": 1,
+            "15": 1,
+            "23": 1,
+            "26": 1
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<DevInSales.Core.Entities.Product> DevInSales.Core.Data.Context.DataContext::get_Products()": {
+          "Lines": {
+            "29": 29
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<DevInSales.Core.Entities.Address> DevInSales.Core.Data.Context.DataContext::get_Addresses()": {
+          "Lines": {
+            "30": 29
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<DevInSales.Core.Entities.City> DevInSales.Core.Data.Context.DataContext::get_Cities()": {
+          "Lines": {
+            "31": 29
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<DevInSales.Core.Entities.State> DevInSales.Core.Data.Context.DataContext::get_States()": {
+          "Lines": {
+            "32": 43
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<DevInSales.Core.Entities.Sale> DevInSales.Core.Data.Context.DataContext::get_Sales()": {
+          "Lines": {
+            "33": 38
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<DevInSales.Core.Entities.Delivery> DevInSales.Core.Data.Context.DataContext::get_Deliveries()": {
+          "Lines": {
+            "34": 29
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<DevInSales.Core.Entities.SaleProduct> DevInSales.Core.Data.Context.DataContext::get_SaleProducts()": {
+          "Lines": {
+            "35": 30
+          },
+          "Branches": []
+        },
+        "System.Void DevInSales.Core.Data.Context.DataContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<DevInSales.Core.Data.Context.DataContext>)": {
+          "Lines": {
+            "11": 87
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\relai\\Documents\\GitHub\\M2P2-DEVinSales\\src\\DevInSales.Core\\Configuration\\JwtOptions.cs": {
+      "DevInSales.Core.Configuration.JwtOptions": {
+        "System.String DevInSales.Core.Configuration.JwtOptions::get_Issuer()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String DevInSales.Core.Configuration.JwtOptions::get_Audience()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 DevInSales.Core.Configuration.JwtOptions::get_Expire()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.IdentityModel.Tokens.SigningCredentials DevInSales.Core.Configuration.JwtOptions::get_SigningCredentials()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

@@ -34,6 +34,7 @@ namespace DevInSales.Core.Services
             return sale.Id;
         }
 
+        // testado
         public SaleResponse GetSaleById(int id)
         {
             Sale? sale = _context.Sales
@@ -50,6 +51,7 @@ namespace DevInSales.Core.Services
 
             return new SaleResponse(sale.Id, sale.Seller.Name, sale.Buyer.Name, sale.SaleDate, listaProdutos);
         }
+
 
         public List<SaleProductResponse> GetSaleProductsBySaleId(int id)
         {

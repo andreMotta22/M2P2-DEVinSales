@@ -1,4 +1,5 @@
 ﻿using DevInSales.Core.Data.Context;
+using DevInSales.Core.Data.Dtos;
 using DevInSales.Core.Entities;
 using DevInSales.Core.Services;
 using Microsoft.EntityFrameworkCore;
@@ -56,7 +57,7 @@ namespace DevInSales.Testes.Services
             Seeds();
             var sale = new Sale(idBuyer, idSeller, DateTime.Now);
 
-            var expectedId = 1;
+            var expectedId = 2;
             var resultId = _servico.CreateSaleByUserId(sale);
 
             Assert.Equal(expectedId, resultId);
@@ -80,6 +81,33 @@ namespace DevInSales.Testes.Services
             var sale2 = _servico.GetSaleById(id);
 
             Assert.Equal(sale1.Id, sale2.SaleId);
+        }
+
+        [Theory]
+        [InlineData(0)]
+        [InlineData(-1)]
+        [InlineData(null)]
+        public void GetSaleProductsBySaleId_IdForIgualNull_RetornaListaVazia(int id ) 
+        {
+           Seeds();
+           var saleProduct =  _context.SaleProducts.Where(p => p.SaleId == id).Include(p => p.Products)
+                                 .Select(p => new SaleProductResponse(p.Products.Name, p.Amount, p.UnitPrice, p.Amount * p.UnitPrice))
+                                 .ToList();
+            var lista = _servico.GetSaleProductsBySaleId(id); 
+           Assert.Equal(lista,saleProduct) ; 
+        }
+
+        [Theory]
+        [InlineData(1)]
+        public void GetSaleProductsBySaleId_IdMaioZero_RetornaLista(int id)
+        {
+            Seeds();
+            var saleProduct = _context.SaleProducts.Where(p => p.SaleId == id).Include(p => p.Products)
+                                  .Select(p => new SaleProductResponse(p.Products.Name, p.Amount, p.UnitPrice, p.Amount * p.UnitPrice))
+                                  .ToList();
+
+            var lista = _servico.GetSaleProductsBySaleId(id);
+            Assert.Equal(lista.Count, saleProduct.Count);
         }
 
 
@@ -111,11 +139,11 @@ namespace DevInSales.Testes.Services
                     PasswordHash = "desenhos2"
                 }
             });
-            _context.Sales.AddRange(
-                new List<Sale>()
+            _context.Sales.AddRange(new List<Sale>()
                 {
                     new Sale(1,2,DateTime.Now)
                 });
+            _context.SaleProducts.Add(new SaleProduct(1, 1, 5, 40));
             _context.SaveChanges();
 
         }
