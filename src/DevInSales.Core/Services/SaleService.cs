@@ -52,7 +52,7 @@ namespace DevInSales.Core.Services
             return new SaleResponse(sale.Id, sale.Seller.Name, sale.Buyer.Name, sale.SaleDate, listaProdutos);
         }
 
-
+        // testado
         public List<SaleProductResponse> GetSaleProductsBySaleId(int id)
         {
             return _context.SaleProducts
@@ -61,6 +61,7 @@ namespace DevInSales.Core.Services
                 .Select(p => new SaleProductResponse(p.Products.Name, p.Amount, p.UnitPrice, p.Amount * p.UnitPrice))
                 .ToList();
         }
+
 
         public List<Sale> GetSaleBySellerId(int? userId)
         {

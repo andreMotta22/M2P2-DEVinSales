@@ -110,6 +110,34 @@ namespace DevInSales.Testes.Services
             Assert.Equal(lista.Count, saleProduct.Count);
         }
 
+        [Theory]
+        [InlineData(2)]
+        public void GetSaleBySellerId_IdMaiorQueZero_RetornaLista(int id)
+        {
+            Seeds();
+            var lista =  _context.Sales.Where(x => x.SellerId == id).ToList();
+            
+            var expected = _servico.GetSaleBySellerId(id);
+
+            Assert.Equal(lista.Count, expected.Count);
+            Assert.Contains<Sale>(lista.FirstOrDefault(), expected);
+        }
+
+
+        [Theory]
+        [InlineData(1)]
+        [InlineData(0)]
+        [InlineData(-2)]
+        [InlineData(null)]
+        public void GetSaleBySellerId_IdInexistente_RetornaNull(int id)
+        {
+            Seeds();
+
+            var expected = _servico.GetSaleBySellerId(id);
+            Assert.Equal(0,expected.Count);
+            Assert.Empty(expected);  
+        }
+
 
         public void Seeds() 
         {
