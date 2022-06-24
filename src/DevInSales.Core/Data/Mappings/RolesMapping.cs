@@ -17,6 +17,7 @@ namespace DevInSales.Core.Data.Mappings
                     new ApplicationRole {Id = 3, Name = "Usuario" , NormalizedName = "USUARIO"}
                 }
             );
+            
         }
     }
 }

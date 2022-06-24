@@ -30,7 +30,6 @@ namespace DevInSales.Testes.Services
             _role = new Mock<IRoleManager>();
             _token = new Mock<ITokenService>();
             _service = new UserService(_manager.Object, _sign.Object, _role.Object, _token.Object, _context);
-
         }
 
         [Theory]

@@ -62,37 +62,41 @@ namespace DevInSales.Core.Services
                 .ToList();
         }
 
-
+        // testado
         public List<Sale> GetSaleBySellerId(int? userId)
         {
             return _context.Sales.Where(p => p.SellerId == userId).ToList();
         }
-
+        
+        // testado
         public List<Sale> GetSaleByBuyerId(int? userId)
         {
             return _context.Sales.Where(p => p.BuyerId == userId).ToList();
         }
+        
+        // testado
         public void UpdateUnitPrice(int saleId, int productId, decimal price)
         {
             Sale? sale = _context.Sales
                 .FirstOrDefault(p => p.Id == saleId);
             if (sale == null)
-                throw new Exception(); 
+                throw new Exception("A sale não existe"); 
 
             SaleProduct? saleproduct = _context.SaleProducts                           
                 .FirstOrDefault(p => p.ProductId == productId);
 
             if (saleproduct == null)
-                throw new Exception();  
+                throw new Exception("O Item procurado não existe");  
                   
             if(price <= 0)
-                throw new ArgumentException();
+                throw new ArgumentException("O preco do item não pode ser menor que zero");
                 
             saleproduct.UpdateUnitPrice(price);         
             
             _context.SaveChanges();            
         }  
         
+        // testado
         public void UpdateAmount(int saleId, int productId, int amount)
         {
 

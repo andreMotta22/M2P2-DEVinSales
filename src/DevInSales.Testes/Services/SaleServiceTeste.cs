@@ -20,6 +20,7 @@ namespace DevInSales.Testes.Services
         {
             _context = new DataContext(new DbContextOptionsBuilder<DataContext>().UseInMemoryDatabase(Guid.NewGuid().ToString()).Options);
             _servico = new SaleService(_context);
+            Seeds();
         }
 
         [Theory]
@@ -36,7 +37,7 @@ namespace DevInSales.Testes.Services
         [InlineData(5, 1)]
         public void CreateSaleByUserId_BuyerNaoExiste_RetornaException(int idBuyer, int idSeller)
         {
-            Seeds();
+            //Seeds();
             var expected = Assert.Throws<ArgumentException>(() => _servico.CreateSaleByUserId(new Sale(idBuyer, idSeller, DateTime.Now)));
             Assert.Equal("BuyerId não encontrado.", expected.Message);
         }
@@ -45,7 +46,7 @@ namespace DevInSales.Testes.Services
         [InlineData(1,5)]
         public void CreateSaleByUserId_SellerNaoExiste_RetornaException(int idBuyer, int idSeller)
         {
-            Seeds();
+            //Seeds();
             var expected = Assert.Throws<ArgumentException>(() => _servico.CreateSaleByUserId(new Sale(idBuyer, idSeller, DateTime.Now)));
             Assert.Equal("SellerId não encontrado.", expected.Message);
         }
@@ -54,7 +55,7 @@ namespace DevInSales.Testes.Services
         [InlineData(1, 2)]
         public void CreateSaleByUserId_InsereSeller_RetornaId(int idBuyer, int idSeller)
         {
-            Seeds();
+            //Seeds();
             var sale = new Sale(idBuyer, idSeller, DateTime.Now);
 
             var expectedId = 2;
@@ -76,7 +77,7 @@ namespace DevInSales.Testes.Services
         [InlineData(1)]
         public void GetSaleById_SellerExiste_RetornaSellerResponse(int id)
         {
-            Seeds();
+            //Seeds();
             var sale1 =  _context.Sales.FirstOrDefault(u => u.Id == id);
             var sale2 = _servico.GetSaleById(id);
 
@@ -89,7 +90,7 @@ namespace DevInSales.Testes.Services
         [InlineData(null)]
         public void GetSaleProductsBySaleId_IdForIgualNull_RetornaListaVazia(int id ) 
         {
-           Seeds();
+           //Seeds();
            var saleProduct =  _context.SaleProducts.Where(p => p.SaleId == id).Include(p => p.Products)
                                  .Select(p => new SaleProductResponse(p.Products.Name, p.Amount, p.UnitPrice, p.Amount * p.UnitPrice))
                                  .ToList();
@@ -101,7 +102,7 @@ namespace DevInSales.Testes.Services
         [InlineData(1)]
         public void GetSaleProductsBySaleId_IdMaioZero_RetornaLista(int id)
         {
-            Seeds();
+            //Seeds();
             var saleProduct = _context.SaleProducts.Where(p => p.SaleId == id).Include(p => p.Products)
                                   .Select(p => new SaleProductResponse(p.Products.Name, p.Amount, p.UnitPrice, p.Amount * p.UnitPrice))
                                   .ToList();
@@ -114,7 +115,7 @@ namespace DevInSales.Testes.Services
         [InlineData(2)]
         public void GetSaleBySellerId_IdMaiorQueZero_RetornaLista(int id)
         {
-            Seeds();
+            //Seeds();
             var lista =  _context.Sales.Where(x => x.SellerId == id).ToList();
             
             var expected = _servico.GetSaleBySellerId(id);
@@ -131,13 +132,105 @@ namespace DevInSales.Testes.Services
         [InlineData(null)]
         public void GetSaleBySellerId_IdInexistente_RetornaNull(int id)
         {
-            Seeds();
+            //Seeds();
 
             var expected = _servico.GetSaleBySellerId(id);
             Assert.Equal(0,expected.Count);
             Assert.Empty(expected);  
         }
 
+        [Theory]
+        [InlineData(1)]
+        public void GetSaleByBuyerId_IdMaiorQueZero_RetornaLista(int id)
+        {
+            //Seeds();
+            var lista = _context.Sales.Where(p => p.BuyerId == id).ToList();
+
+            var expected = _servico.GetSaleByBuyerId(id);
+
+            Assert.Equal(lista.Count, expected.Count);
+            Assert.Contains<Sale>(lista.FirstOrDefault(), expected);
+        }
+
+        [Theory]
+        [InlineData(5)]
+        [InlineData(0)]
+        [InlineData(-2)]
+        [InlineData(null)]
+        public void GetSaleByBuyerId_IdInexistente_RetornaNull(int id)
+        {
+            //Seeds();
+
+            var expected = _servico.GetSaleByBuyerId(id);
+            Assert.Equal(0, expected.Count);
+            Assert.Empty(expected);
+        }
+
+        [Theory]
+        [InlineData(null)]
+        [InlineData(-1)]
+        public void UpdateUnitPrice_SaleNãoAchado_RetornaException(int saleId) 
+        {
+            //Seeds();
+            var resultado = Assert.Throws<Exception>(() => _servico.UpdateUnitPrice(saleId,1,5.00M));
+            Assert.Equal("A sale não existe", resultado.Message);
+        }
+        
+        [Theory]
+        [InlineData(null)]
+        [InlineData(-1)]
+        public void UpdateUnitPrice_SaleProductNãoAchado_RetornaException(int productId)
+        {
+            //Seeds();
+            var resultado = Assert.Throws<Exception>(() => _servico.UpdateUnitPrice(1, productId, 5.00M));
+            Assert.Equal("O Item procurado não existe", resultado.Message);
+        }
+
+        [Theory]
+        [InlineData(null)]
+        [InlineData(-1)]
+        [InlineData(0)]
+        public void UpdateUnitPrice_PrecoMenorQueZero_RetornaException(decimal price)
+        {
+            //Seeds();
+            var resultado = Assert.Throws<ArgumentException>(() => _servico.UpdateUnitPrice(1, 1, price));
+            Assert.Equal("O preco do item não pode ser menor que zero", resultado.Message);
+        }
+
+        [Theory]
+        [InlineData(0,1,20)]
+        public void UpdateAmount_VendaNãoExiste_RetornaException(int saleId, int productId, int amount) 
+        {
+            var resultado = Assert.Throws<ArgumentException>(() => _servico.UpdateAmount(saleId, productId, amount));
+            Assert.Equal("Não existe venda com esse Id. (Parameter 'saleId')", resultado.Message);
+        }
+
+        [Theory]
+        [InlineData(1, 0, 20)]
+        public void UpdateAmount_ProdutoVendidoNãoExiste_RetornaException(int saleId, int productId, int amount)
+        {
+            var resultado = Assert.Throws<ArgumentException>(() => _servico.UpdateAmount(saleId, productId, amount));
+            Assert.Equal("Não existe este produto nesta venda. (Parameter 'productId')", resultado.Message);
+        }
+
+        [Theory]
+        [InlineData(1, 1, 0)]
+        [InlineData(1, 1, -1)]
+        public void UpdateAmount_ValorMenorQueZero_RetornaException(int saleId, int productId, int amount)
+        {
+            var resultado = Assert.Throws<ArgumentException>(() => _servico.UpdateAmount(saleId, productId, amount));
+            Assert.Equal("Quantidade não pode ser menor ou igual a zero. (Parameter 'amount')", resultado.Message);
+        }
+
+        [Theory]
+        [InlineData(3,-1)]
+        [InlineData(3, 0)]
+        [InlineData(3, null)]
+        public void CreateDeliveryForASale_SaleNull_RetornaException(int adress, int sale)
+        {
+           var result = Assert.Throws<ArgumentException>(() => _servico.CreateDeliveryForASale(new Delivery(adress, sale, DateTime.Now)));
+            Assert.Equal("Não existe venda com esse Id. (Parameter 'saleId')", result.Message);
+        }
 
         public void Seeds() 
         {
