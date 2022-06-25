@@ -232,6 +232,28 @@ namespace DevInSales.Testes.Services
             Assert.Equal("Não existe venda com esse Id. (Parameter 'saleId')", result.Message);
         }
 
+        [Theory]
+        [InlineData(-1,1)]
+        [InlineData(0,1)]
+        [InlineData(null,1)]
+        public void CreateDeliveryForASale_AdressNull_RetornaException(int adress, int sale)
+        {
+            var result = Assert.Throws<ArgumentException>(() => _servico.CreateDeliveryForASale(new Delivery(adress, sale, DateTime.Now)));
+            Assert.Equal("Não existe endereço com esse Id. (Parameter 'AddressId')", result.Message);
+
+        }
+
+        // acho que foi o melhor teste unitario que fiz até agr
+        [Theory]
+        [InlineData(1, 1)]
+        public void CreateDeliveryForASale_AdressExiste_RetornaException(int adress, int sale)
+        {
+            var delivery = new Delivery(adress, sale, DateTime.Now);
+            var id =_servico.CreateDeliveryForASale(delivery);
+            Assert.Equal(delivery.Id, id);
+            Assert.True(_context.Deliveries.Count() >= 1);
+        }
+
         public void Seeds() 
         {
             _context.Users.AddRange(new List<User>() {
@@ -265,6 +287,7 @@ namespace DevInSales.Testes.Services
                     new Sale(1,2,DateTime.Now)
                 });
             _context.SaleProducts.Add(new SaleProduct(1, 1, 5, 40));
+            _context.Addresses.Add(new Address("rua do figo","43244234",2,"ewe",1));
             _context.SaveChanges();
 
         }
