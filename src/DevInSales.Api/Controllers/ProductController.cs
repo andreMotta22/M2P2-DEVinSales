@@ -33,6 +33,7 @@ namespace DevInSales.Api.Controllers
         /// <response code="204">A atualização teve sucesso.</response>
         /// <response code="404">Not Found. O Produto solicitado não existe.</response>
 
+        // TESTEADO
         [HttpGet("{id}")]
         [Authorize(Roles = "Admin,Gerente,Usuario")]
         public ActionResult<Product> ObterProdutoPorId(int id)
@@ -60,7 +61,7 @@ namespace DevInSales.Api.Controllers
         /// <response code="204">No Content, caso não encontrado nenhum resultado.</response>
         /// <response code="400">Bad Request, não é possível deletar este endereço pois ele está na lista de entrega</response>
 
-
+        // testado
         [HttpPut("{id}")]
         [Authorize(Roles = "Admin,Gerente")]
         public ActionResult AtualizarProduto(AddProduct model, int id)
@@ -74,7 +75,7 @@ namespace DevInSales.Api.Controllers
             if (_productService.ProdutoExiste(model.Name))
                 return BadRequest("esse nome já existe na base de dados");
 
-
+            
             productOld.AtualizarDados(model.Name, model.SuggestedPrice);
 
             _productService.Atualizar();
