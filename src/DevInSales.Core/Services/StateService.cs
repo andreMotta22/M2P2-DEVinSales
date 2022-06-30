@@ -16,14 +16,8 @@ namespace DevInSales.Core.Services
 
         public List<ReadState> GetAll(string? name)
         {
-            return _context.States
-                .Include(p => p.Cities)
-                .Where(
-                    p =>
-                        !String.IsNullOrWhiteSpace(name)
-                            ? p.Name.ToUpper().Contains(name.ToUpper())
-                            : true
-                )
+            return _context.States.Include(p => p.Cities)
+                .Where(p => !String.IsNullOrWhiteSpace(name)? p.Name.ToUpper().Contains(name.ToUpper()): true)
                 .Select(s => ReadState.StateToReadState(s))
                 .ToList();
         }

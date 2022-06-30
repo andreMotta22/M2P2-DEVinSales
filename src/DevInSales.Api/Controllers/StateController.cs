@@ -47,6 +47,7 @@ namespace DevInSales.Api.Controllers
             return Ok(statesList);
         }
 
+        // testado    
         /// <summary>
         /// Buscar estados por id.
         /// </summary>
