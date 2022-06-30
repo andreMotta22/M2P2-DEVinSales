@@ -41,7 +41,7 @@ namespace DevInSales.Api.Controllers
         /// <returns>Lista de endereços</returns>
         /// <response code="200">Sucesso.</response>
         /// <response code="204">Pesquisa realizada com sucesso porém não retornou nenhum resultado</response>
-
+        // testado
         [HttpGet]
         [Authorize(Roles = "Admin,Usuario,Gerente")]
         public ActionResult<List<UserResponse>> ObterUsers(string? nome, string? DataMin, string? DataMax)
@@ -57,6 +57,7 @@ namespace DevInSales.Api.Controllers
             return Ok(listaDto);
         }
 
+        
         /// <summary>
         /// Busca um usuário por id.
         /// </summary>

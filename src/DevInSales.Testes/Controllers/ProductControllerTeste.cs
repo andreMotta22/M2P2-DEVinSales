@@ -10,12 +10,12 @@ using Xunit;
 
 namespace DevInSales.Testes.Controllers
 {
-    public class DeliveryControllerTeste
+    public class ProductControllerTest
     {
         
         private readonly Mock<IProductService> _service;
         private readonly ProductController _controler; 
-        public DeliveryControllerTeste()
+        public ProductControllerTest()
         {
             _service = new Mock<IProductService>();
             _controler = new ProductController(_service.Object);
@@ -129,6 +129,48 @@ namespace DevInSales.Testes.Controllers
 
 
             _service.Verify(s => s.ObterProdutos("teste",10,20),Times.Once);
+        }
+
+        [Fact]
+        public void GetAll_ListaProdutoCheia_RetonaOk()
+        {
+            _service.Setup(s => s.ObterProdutos("teste",10,20)).Returns(new List<Product>(){new Product(1,"xbox", 200M),
+                                                                                            new Product(2,"play", 300M),
+                                                                                            new Product(3,"teste", 200M)});
+
+            var retorno = _controler.GetAll("teste",10,20);
+            
+            Assert.IsAssignableFrom<OkObjectResult>(retorno.Result);
+            _service.Verify(s => s.ObterProdutos("teste",10,20),Times.Once);
+        }
+
+        [Fact]
+        public void PostProduct_ProdutoExiste_RetornaBadRequest() 
+        {
+            var model = new AddProduct("xbox",200M);
+            
+            _service.Setup(s => s.ProdutoExiste(model.Name)).Returns(true);
+
+            var retorno = _controler.PostProduct(model);
+
+            Assert.IsAssignableFrom<BadRequestObjectResult>(retorno);
+
+            _service.Verify(s => s.ProdutoExiste(model.Name),Times.Once);
+        }
+        [Fact]
+        public void PostProduct_ProdutoAdicionado_RetornaCreatedAction() 
+        {
+            var model = new AddProduct("xbox",200M);
+            var product = new Product(model.Name,model.SuggestedPrice);
+
+            _service.Setup(s => s.ProdutoExiste(model.Name)).Returns(false);
+            _service.Setup(s => s.CreateNewProduct(product)).Returns(1);
+
+            var retorno = _controler.PostProduct(model);
+
+            Assert.IsAssignableFrom<CreatedAtActionResult>(retorno);
+
+            _service.Verify(s => s.ProdutoExiste(model.Name),Times.Once);
         }
     }
 }
