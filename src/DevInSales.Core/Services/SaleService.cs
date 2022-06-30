@@ -26,7 +26,7 @@ namespace DevInSales.Core.Services
                 throw new ArgumentException("BuyerId não encontrado.");
             if (!_context.Users.Any(user => user.Id == sale.SellerId))
                 throw new ArgumentException("SellerId não encontrado.");
-
+                
             _context.Sales.Add(sale);
             _context.SaveChanges();
 

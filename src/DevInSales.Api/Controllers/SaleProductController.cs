@@ -1,6 +1,7 @@
 ﻿using DevInSales.Core.Data.Dtos;
 using DevInSales.Core.Entities;
 using DevInSales.Core.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DevInSales.Api.Controllers
@@ -19,7 +20,7 @@ namespace DevInSales.Api.Controllers
         // Endpoint criado apenas para servir como path do POST {saleId}/item
         [ApiExplorerSettings(IgnoreApi = true)]
         [HttpGet("saleById/item")]
-
+        [Authorize(Roles = "Admin,Gerente,Usuario")]
         public ActionResult<int> GetSaleProductById(int saleProductId)
         {
             var id = _saleProductService.GetSaleProductById(saleProductId);
@@ -37,6 +38,7 @@ namespace DevInSales.Api.Controllers
         /// <response code="404">Not Found, caso o productId ou o saleId não existam.</response>
         [HttpPost("{saleId}/item")]
         [ProducesResponseType(StatusCodes.Status201Created)]
+        [Authorize(Roles = "Admin,Gerente")]
         public ActionResult<int> CreateSaleProduct(int saleId, SaleProductRequest saleProduct)
         {
             try

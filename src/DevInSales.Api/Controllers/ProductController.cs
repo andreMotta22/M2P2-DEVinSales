@@ -1,6 +1,7 @@
 using DevInSales.Api.Dtos;
 using DevInSales.Core.Entities;
 using DevInSales.Core.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DevInSales.Api.Controllers
@@ -33,6 +34,7 @@ namespace DevInSales.Api.Controllers
         /// <response code="404">Not Found. O Produto solicitado não existe.</response>
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin,Gerente,Usuario")]
         public ActionResult<Product> ObterProdutoPorId(int id)
         {
             var produto = _productService.ObterProductPorId(id);
@@ -60,6 +62,7 @@ namespace DevInSales.Api.Controllers
 
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin,Gerente")]
         public ActionResult AtualizarProduto(AddProduct model, int id)
         {
             var productOld = _productService.ObterProductPorId(id);
@@ -90,6 +93,7 @@ namespace DevInSales.Api.Controllers
 
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public ActionResult Delete(int id)
         {
             try
@@ -125,6 +129,7 @@ namespace DevInSales.Api.Controllers
         /// <response code="400">Bad Request, stateId informado é diferente do stateId da cidade cadastrada no banco de dados.</response>
 
         [HttpGet]
+        [Authorize(Roles = "Admin,Gerente,Usuario")]
         public ActionResult<List<Product>> GetAll(string? name, decimal? priceMin, decimal? priceMax)
         {
             try
@@ -158,6 +163,7 @@ namespace DevInSales.Api.Controllers
         /// <response code="201">Cadastrado com sucesso.</response>
         /// <response code="400">Bad Request Esse produto já existe na base de dados</response>
         [HttpPost]
+        [Authorize(Roles = "Admin,Gerente")]
         public ActionResult PostProduct(AddProduct model)
         {
             var product = new Product(model.Name, model.SuggestedPrice);
